@@ -1,13 +1,13 @@
 const productCardAmountValueList = document.querySelectorAll(
-    '.product-card__amount-value'
+    '.cs-product-card__amount-value'
 )
 
 const productCardAmountMinusList = document.querySelectorAll(
-    '.product-card__amount-minus'
+    '.cs-product-card__amount-minus'
 )
 
 const productCardAmountPlusList = document.querySelectorAll(
-    '.product-card__amount-plus'
+    '.cs-product-card__amount-plus'
 )
 
 productCardAmountValueList.forEach((item) => {
@@ -19,8 +19,8 @@ productCardAmountValueList.forEach((item) => {
 productCardAmountMinusList.forEach((item) => {
     item.addEventListener('click', (event) => {
         const productCardAmountValue = event.target
-            .closest('.product-card__amount')
-            .querySelector('.product-card__amount-value')
+            .closest('.cs-product-card__amount')
+            .querySelector('.cs-product-card__amount-value')
 
         if (productCardAmountValue.value > 1)
             productCardAmountValue.value =
@@ -31,8 +31,8 @@ productCardAmountMinusList.forEach((item) => {
 productCardAmountPlusList.forEach((item) => {
     item.addEventListener('click', (event) => {
         const productCardAmountValue = event.target
-            .closest('.product-card__amount')
-            .querySelector('.product-card__amount-value')
+            .closest('.cs-product-card__amount')
+            .querySelector('.cs-product-card__amount-value')
 
         productCardAmountValue.value =
             parseInt(productCardAmountValue.value) + 1
