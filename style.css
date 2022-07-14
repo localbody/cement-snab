@@ -20,8 +20,12 @@ body {
 }
 
 .cs-products {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
     display: flex;
     align-items: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 .cs-product-card {
@@ -33,8 +37,9 @@ body {
     border-radius: 6px;
     padding: 48px 16px 24px 16px;
     width: 256px;
+    min-width: 256px;
     position: relative;
-    margin: 32px;
+    margin: 8px;
 }
 
 .cs-product-card--sale::after {
@@ -124,10 +129,11 @@ body {
 
 .cs-product-card__link:hover {
     border-bottom: 1px solid var(--white);
+    text-decoration: none;
 }
 
 .cs-product-card__title {
-    display: block;
+    font-family: 'Oswald', sans-serif;
     color: var(--light-black);
     text-transform: uppercase;
     font-weight: 400;
@@ -181,20 +187,23 @@ body {
     content: 'Наличие:';
 }
 
-.cs-product-card__controls {
+.cs-product-card__controls,
+.cs-product-card__controls form.cart {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
 }
 
-.cs-product-card__amount {
+.cs-product-card__controls .cs-product-card__amount,
+.cs-product-card__controls .quantity {
     display: flex;
     align-items: center;
     height: 40px;
     width: 96px;
 }
 
+.cs-product-card__controls .single_add_to_cart_button,
 .cs-product-card__tocart {
     background-color: var(--blue);
     border-radius: 5px;
@@ -208,6 +217,8 @@ body {
     cursor: pointer;
 }
 
+input.minus,
+input.plus,
 .cs-product-card__amount-minus,
 .cs-product-card__amount-plus {
     border: none;
@@ -220,17 +231,30 @@ body {
     color: var(--black);
 }
 
+label.screen-reader-text {
+    display: none;
+}
+
+input.minus,
 .cs-product-card__amount-minus {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-bottom: 8px;
 }
 
+input.plus,
 .cs-product-card__amount-plus {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
+.cs-product-card__controls input[type='number']::-webkit-outer-spin-button,
+.cs-product-card__controls input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.woocommerce .cs-product-card__controls input[type='number'],
 .cs-product-card__amount-value {
     border: none;
     border-radius: 0;

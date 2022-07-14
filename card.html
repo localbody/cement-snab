@@ -87,6 +87,50 @@
                 </div>
 
                 <div class="cs-product-card__controls">
+                    <form
+                        class="cart"
+                        action="https://cement-snab.ru/product/tsement-de-luxe-m500-d0-meshok-50-kg"
+                        method="post"
+                        enctype="multipart/form-data"
+                    >
+                        <div class="quantity">
+                            <input type="button" value="-" class="minus" />
+                            <label
+                                class="screen-reader-text"
+                                for="quantity_62d0704d9f641"
+                                >Количество</label
+                            >
+                            <input
+                                type="number"
+                                id="quantity_62d0704d9f641"
+                                class="input-text qty text"
+                                step="1"
+                                min="1"
+                                max=""
+                                name="quantity"
+                                value="1"
+                                title="Кол-во"
+                                size="4"
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                aria-labelledby="Количество ЦЕМЕНТ DE LUXE М500 Д0 (CEM I 42,5) мешок 50 КГ"
+                            />
+
+                            <input type="button" value="+" class="plus" />
+                        </div>
+
+                        <button
+                            type="submit"
+                            name="add-to-cart"
+                            value="5439"
+                            class="single_add_to_cart_button button alt"
+                        >
+                            В корзину
+                        </button>
+                    </form>
+                </div>
+                <!--
+                <div class="cs-product-card__controls">
                     <div class="cs-product-card__amount">
                         <button class="cs-product-card__amount-minus">-</button>
                         <input
@@ -102,6 +146,7 @@
 
                     <button class="cs-product-card__tocart">В корзину</button>
                 </div>
+ -->
             </div>
         </div>
         <script src="script.js"></script>

@@ -38,3 +38,29 @@ productCardAmountPlusList.forEach((item) => {
             parseInt(productCardAmountValue.value) + 1
     })
 })
+
+const quantitys = document.querySelectorAll('.quantity')
+
+quantitys.forEach((quantity) => {
+    const input_qty = quantity.querySelector('.input-text.qty.text')
+
+    input_qty.addEventListener('change', (event) => {
+        if (isNaN(parseInt(event.target.value))) event.target.value = 1
+    })
+
+    const minus = quantity.querySelector('.minus')
+    if (minus) {
+        minus.addEventListener('click', (event) => {
+            if (input_qty.value > 1)
+                input_qty.value = parseInt(input_qty.value) - 1
+        })
+    }
+
+    const plus = quantity.querySelector('.plus')
+
+    if (plus) {
+        plus.addEventListener('click', (event) => {
+            input_qty.value = parseInt(input_qty.value) + 1
+        })
+    }
+})
