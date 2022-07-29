@@ -1,283 +1,286 @@
 *,
 html,
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 :root {
-    --red: #ff2e00;
-    --blue: #0766d5;
-    --dark-gray: #989898;
-    --gray: #d9d9d9;
-    --light-gray: #e6e6e6;
-    --green: #46ab15;
-    --light-black: #413f4f;
-    --black: #000000;
-    --white: #ffffff;
+  --red: #ff2e00;
+  --blue: #0766d5;
+  --dark-gray: #989898;
+  --gray: #d9d9d9;
+  --light-gray: #e6e6e6;
+  --green: #46ab15;
+  --light-black: #413f4f;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 .cs-products {
-    float: left;
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    font-family: 'Oswald', sans-serif;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 .cs-product-card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 174px 36px 64px 80px 40px;
-    justify-content: space-between;
-    border: 1px solid var(--gray);
-    border-radius: 6px;
-    padding: 48px 16px 24px 16px;
-    width: 256px;
-    min-width: 256px;
-    position: relative;
-    margin: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 174px 36px 64px 80px 40px;
+  justify-content: space-between;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  padding: 48px 16px 24px 16px;
+  width: 256px;
+  min-width: 256px;
+  position: relative;
+  margin: 8px;
 }
 
 .cs-product-card--sale::after {
-    content: 'Распродажа';
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    background-color: var(--red);
-    color: var(--white);
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 12px;
-    font-weight: 400;
-    border-top-right-radius: 6px;
-    line-height: 32px;
-    text-align: center;
+  content: 'Распродажа';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  background-color: var(--red);
+  color: var(--white);
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  border-top-right-radius: 6px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .cs-product-card__image {
-    width: 100%;
-    height: 168px;
+  width: 100%;
+  height: 168px;
 }
 
 .cs-product-card__image img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .cs-product-card__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cs-product-card__price-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .cs-product-card__price--old {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--blue);
-    position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blue);
+  position: relative;
 }
 
 .cs-product-card__price--old::before {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: var(--blue);
-    display: block;
-    bottom: 40%;
-    position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--blue);
+  display: block;
+  bottom: 40%;
+  position: absolute;
 }
 
 .cs-product-card__price--old::after {
-    content: '₽';
-    margin-left: 4px;
+  content: '₽';
+  margin-left: 4px;
 }
 
 .cs-product-card__price {
-    color: var(--blue);
-    font-size: 18px;
-    font-weight: 500;
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .cs-product-card__price::after {
-    content: '₽';
-    margin-left: 4px;
+  content: '₽';
+  margin-left: 4px;
 }
 
 .cs-product-card--sale .cs-product-card__price {
-    color: var(--red);
+  color: var(--red);
 }
 
 .cs-product-card__link {
-    color: var(--blue);
-    font-size: 14px;
-    font-weight: 400;
-    border-bottom: 1px solid var(--blue);
-    text-decoration: none;
-    transition: all 0.3s ease;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid var(--blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .cs-product-card__link:hover {
-    border-bottom: 1px solid var(--white);
-    text-decoration: none;
+  border-bottom: 1px solid var(--white);
+  text-decoration: none;
 }
 
 .cs-product-card__title {
-    font-family: 'Oswald', sans-serif;
-    color: var(--light-black);
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    height: 48px;
+  font-family: 'Oswald', sans-serif;
+  color: var(--light-black);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 48px;
 }
 
+.cs-product-card__data,
 .cs-product-card__weight,
 .cs-product-card__madein,
 .cs-product-card__available {
-    display: block;
-    font-size: 13px;
-    line-height: 19px;
-    font-weight: 400;
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 400;
 }
 
+.cs-product-card__data,
 .cs-product-card__weight,
 .cs-product-card__madein {
-    color: var(--light-black);
+  color: var(--light-black);
 }
 
 .cs-product-card__available {
-    color: var(--green);
+  color: var(--green);
 }
 
 .cs-product-card__available--not {
-    color: var(--dark-gray);
+  color: var(--dark-gray);
 }
 
+.cs-product-card__data span,
 .cs-product-card__weight::before,
 .cs-product-card__madein::before,
 .cs-product-card__available::before {
-    margin-right: 2px;
-    color: var(--dark-gray);
+  margin-right: 2px;
+  color: var(--dark-gray);
 }
 
 .cs-product-card__weight::before {
-    content: 'Вес:';
+  content: 'Вес:';
 }
 
 .cs-product-card__madein::before {
-    content: 'Производство:';
+  content: 'Производство:';
 }
 
 .cs-product-card__available::before {
-    content: 'Наличие:';
+  content: 'Наличие:';
 }
 
 .cs-product-card__controls,
 .cs-product-card__controls form.cart {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .cs-product-card__controls .cs-product-card__amount,
 .cs-product-card__controls .quantity {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 96px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 96px;
 }
 
 .cs-product-card__controls .single_add_to_cart_button,
 .cs-product-card__tocart {
-    background-color: var(--blue);
-    border-radius: 5px;
-    color: var(--white);
-    font-size: 12px;
-    font-weight: 300;
-    border: none;
-    width: 120px;
-    height: 40px;
-    text-transform: uppercase;
-    cursor: pointer;
+  background-color: var(--blue);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 300;
+  border: none;
+  width: 120px;
+  height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 input.minus,
 input.plus,
 .cs-product-card__amount-minus,
 .cs-product-card__amount-plus {
-    border: none;
-    width: 100%;
-    height: 100%;
-    background-color: var(--light-gray);
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--black);
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-gray);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--black);
 }
 
 label.screen-reader-text {
-    display: none;
+  display: none;
 }
 
 input.minus,
 .cs-product-card__amount-minus {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-bottom: 8px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 8px;
 }
 
 input.plus,
 .cs-product-card__amount-plus {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .cs-product-card__controls input[type='number']::-webkit-outer-spin-button,
 .cs-product-card__controls input[type='number']::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .woocommerce .cs-product-card__controls input[type='number'],
 .cs-product-card__amount-value {
-    border: none;
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
-    border-top: 1px solid var(--light-gray);
-    border-bottom: 1px solid var(--light-gray);
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--black);
-    -moz-appearance: textfield;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--black);
+  -moz-appearance: textfield;
 }
 
 .cs-product-card__amount-value::-webkit-outer-spin-button,
 .cs-product-card__amount-value::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .cs-product-card__amount-minus:focus,
 .cs-product-card__amount-plus:focus,
 .cs-product-card__amount-value:focus {
-    z-index: 1;
-    outline: 2px solid var(--blue);
+  z-index: 1;
+  outline: 2px solid var(--blue);
 }
