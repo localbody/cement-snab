@@ -1,29 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bundle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/bundle.css" />
-</head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+  <div class="panel header__top">
+    <ul class="nav">
+      <li>Главная</li>
+      <li>Магазин</li>
+      <li>О компании</li>
+      <li>Доставка</li>
+      <li>Оплата</li>
+      <li>Статьи</li>
+      <li>Контакты</li>
+      <li>Прайс-лист</li>
+    </ul>
 
-<body>
+    <div class="header__buttons">
+      <a class="header__button" href="">
+        <img src="../icons/max.svg" alt="" />
+      </a>
+      <a class="header__button" href="">
+        <img src="../icons/whatsapp.svg" alt="" />
+      </a>
+      <button class="header__button search">
+        <img src="../icons/search.svg" alt="" />
+      </button>
+    </div>
 
-  <span>Проверка</span>
+    <div class="cart">
+      <button class="button button--accent button--cart">Корзина</button>
+      <span class="cart__count">999</span>
+    </div>
+  </div>
 
-  <!-- header -->
-  <div class="header">
+  <div class="header__main">
+    <div class="header__logo">
+      <img class="header__logo-image" src="../images/logo.png" alt="" />
+    </div>
+    <button class="button button--accent button--catalog">Каталог</button>
+
+    <div class="info info--worktime">
+      <span class="info__title">Пн-Пт</span>
+      <span class="info__subtitle">с 9:00 до 18:00</span>
+    </div>
+
+    <div class="info info--email">
+      <span class="info__title">e-mail:</span>
+      <a class="info__subtitle info__link" href="mailto:info@cement-snab.ru">info@cement-snab.ru</a>
+    </div>
+
+    <div class="info info--phone">
+      <a class="info__title info__title--phone" href="tel:+74993980591">+7 (499) 398-05-91</a>
+      <button class="info__subtitle info__link info__link--callback">Заказать обратный звонок</button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- breadcrumbs -->
+      <div class="breadcrumbs">
+  <li><a class="breadcrumbs__link" href="">Главная</a></li>
+  <span class="breadcrumbs__divider">/</span>
+  <li><a class="breadcrumbs__link" href="">Магазин</a></li>
+  <span class="breadcrumbs__divider">/</span>
+  <li><a class="breadcrumbs__link" href="">Сухие смеси</a></li>
+  <span class="breadcrumbs__divider">/</span>
+  <li><a class="breadcrumbs__link" href="">Монтажно-кладочные смеси</a></li>
+  <span class="breadcrumbs__divider">/</span>
+  <li class="breadcrumbs__current">Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)</li>
+</div>
+
+
+      <!-- products -->
+      <div class="product">
+  <div class="panel product__slider"></div>
+  <div class="panel product__info">
+    <h1 class="product__title">Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)</h1>
+    <div class="product__details">
+      <h3 class="product__details-title">Характеристики товара</h3>
+
+      <div class="product__detail">
+        <span class="product__detail-title">Производитель</span>
+        <span class="product__detail-subtitle">Академия смеси</span>
+      </div>
+      <div class="product__detail">
+        <span class="product__detail-title">Вес</span>
+        <span class="product__detail-subtitle">50 кг</span>
+      </div>
+      <div class="product__detail">
+        <span class="product__detail-title">Тип сухой смеси</span>
+        <span class="product__detail-subtitle">Морозостойкая смесь монтажно-кладочная</span>
+      </div>
+      <div class="product__detail">
+        <span class="product__detail-title">Расход при толщине слоя 10 мм</span>
+        <span class="product__detail-subtitle">18 - 20</span>
+      </div>
+      <div class="product__detail">
+        <span class="product__detail-title">Наибольшая крупность заполнителя, не более мм</span>
+        <span class="product__detail-subtitle">2,5</span>
+      </div>
+      <div class="product__detail">
+        <span class="product__detail-title">Количество воды затворения (на мешок 50 кг), л</span>
+        <span class="product__detail-subtitle">6,5 - 8,0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="product__wrapper">
+    <div class="panel product__to-card">
+      <div class="product__purchase">
+        <div class="product__price">
+          <span class="product__price-summa">300,00</span><sup class="product__asterix">*</sup>
+        </div>
+        <div class="product__in-stock">В наличии</div>
+      </div>
+      <!-- quantity -->
+      <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+
+      <div class="product__buttons">
+        <button class="button button--accent">В корзину</button>
+        <button class="button button--second">Купить в один клик</button>
+      </div>
+
+      <div class="product__asterix-info">
+        <sup>*</sup>- Стоимость без учета <a class="product__delivery-link" href="">доставки</a>
+      </div>
+    </div>
+
+    <!-- callback -->
+    <div class="panel callback">
+  <span class="callback__title">Заказать обратный звонок</span>
+
+  <div class="callback__inputs">
+    <input class="callback__input" placeholder="Ваше имя" type="text" name="" id="" />
+    <input class="callback__input" placeholder="Номер телефона" type="tel" name="" id="" />
+  </div>
+
+  <button class="button button--accent">Заказать звонок</button>
+
+  <div class="callback__links">
+    <a class="callback__link callback__link--max" href="">Мы есть в MAX</a>
+    <a class="callback__link callback__link--whatsappp" href="">Мы есть в WhatsApp</a>
+  </div>
+</div>
+
+  </div>
+
+  <div class="product__tabs">
+    <div class="panel product__tabs-nav">
+      <button class="product__tabs-button product__tabs-button--active" data-tab="1">Описание товара</button>
+      <button class="product__tabs-button" data-tab="1">Характеристики</button>
+      <button class="product__tabs-button" data-tab="1">Оплата и доставка</button>
+    </div>
+    <div class="panel product__tabs-content">
+      <div class="product__tab tab--show" id="tab1">
+        <p>Применяется для выполнения монтажно-кладочных и ремонтных работ.</p>
+        <p>
+          Представляет собой высокопрочную смесь, состоящую из портландцемента, фракционированного песка и минерального
+          наполнителя.
+        </p>
+        <p>
+          Материал подходит для работ при положительных и отрицательных (модификация -15°С) температурах, отличается
+          простотой приготовления, высокой морозостойкостью, устойчивостью к усадке, технологичностью.
+        </p>
+      </div>
+      <div class="product__tab" id="tab2">
+        <div class="product__details">
+          <div class="product__detail">
+            <span class="product__detail-title">Вес</span>
+            <span class="product__detail-subtitle">50 кг</span>
+          </div>
+          <div class="product__detail">
+            <span class="product__detail-title">Вес</span>
+            <span class="product__detail-subtitle">50 кг</span>
+          </div>
+          <div class="product__detail">
+            <span class="product__detail-title">Вес</span>
+            <span class="product__detail-subtitle">50 кг</span>
+          </div>
+          <div class="product__detail">
+            <span class="product__detail-title">Вес</span>
+            <span class="product__detail-subtitle">50 кг</span>
+          </div>
+          <div class="product__detail">
+            <span class="product__detail-title">Вес</span>
+            <span class="product__detail-subtitle">50 кг</span>
+          </div>
+          <div class="product__detail">
+            <span class="product__detail-title">Вес</span>
+            <span class="product__detail-subtitle">50 кг</span>
+          </div>
+          <div class="product__detail">
+            <span class="product__detail-title">Вес</span>
+            <span class="product__detail-subtitle">50 кг</span>
+          </div>
+        </div>
+      </div>
+      <div class="product__tab" id="tab3">
+        <h3 class="product__tab-title">Способы оплаты</h3>
+        <p class="product__tab-subtitle">Для физических лиц</p>
+        <ul class="product__tab-list">
+          <li>
+            <span>Банковская карта</span>
+            <ul class="cards-list">
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+            </ul>
+          </li>
+        </ul>
+
+        <p class="product__tab-subtitle">Для юр. лиц</p>
+        <ul class="product__tab-list">
+          <li>Оплата по реквизитам</li>
+          <li>
+            Оставляете заявку на сайте, с Вами свяжется наш менеджер, уточнит все параметры заказа, после этого
+            выставляется счет. После поступления средств в обговоренный срок доставляем товар.
+          </li>
+          <li>
+            Вы звоните на наш номер телефона, менеджер записывает Ваш заказ. Выставляет счет на Вашу организацию.
+            Денежные средства поступают, и мы поставляем заказ в указанный Вами день.
+          </li>
+        </ul>
+
+        <h3 class="product__tab-title">Способы оплаты</h3>
+        <h3 class="product__tab-title">Способы оплаты</h3>
+        <div class="product__tab-map"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- products -->
+  <div class="panel products">
+  <span class="products__title">Похожие товары</span>
+
+  <div class="products-item">
+    <div class="products-item__image">
+      <img src="" alt="" />
+    </div>
+    <div class="products-item__wrapper">
+      <div class="products__in-stock">В наличии</div>
+      <div class="products-item__title">Смесь м300 FINGERS 50кг</div>
+    </div>
+    <span class="products-item__price">160</span>
+
+    <!-- quantity -->
+    <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+    <div class="products-item__wrapper">
+      <span class="products-item__price">160</span>
+      <p><span>Вес:</span><span>50кг</span></p>
+      <p><span>Количество:</span><span>1шт</span></p>
+    </div>
+
+    <button class="button button--accent">В корзину</button>
+  </div>
+
+  <div class="products-item">
+    <div class="products-item__image">
+      <img src="" alt="" />
+    </div>
+    <div class="products-item__wrapper">
+      <div class="products__in-stock">В наличии</div>
+      <div class="products-item__title">Смесь м300 FINGERS 50кг</div>
+    </div>
+    <span class="products-item__price">160</span>
+
+    <!-- quantity -->
+    <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+    <div class="products-item__wrapper">
+      <span class="products-item__price">160</span>
+      <p><span>Вес:</span><span>50кг</span></p>
+      <p><span>Количество:</span><span>1шт</span></p>
+    </div>
+
+    <button class="button button--accent">В корзину</button>
+  </div>
+
+  <div class="products-item">
+    <div class="products-item__image">
+      <img src="" alt="" />
+    </div>
+    <div class="products-item__wrapper">
+      <div class="products__in-stock">В наличии</div>
+      <div class="products-item__title">Смесь м300 FINGERS 50кг</div>
+    </div>
+    <span class="products-item__price">160</span>
+
+    <!-- quantity -->
+    <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+    <div class="products-item__wrapper">
+      <span class="products-item__price">160</span>
+      <p><span>Вес:</span><span>50кг</span></p>
+      <p><span>Количество:</span><span>1шт</span></p>
+    </div>
+
+    <button class="button button--accent">В корзину</button>
+  </div>
+
+  <div class="products-item">
+    <div class="products-item__image">
+      <img src="" alt="" />
+    </div>
+    <div class="products-item__wrapper">
+      <div class="products__in-stock">В наличии</div>
+      <div class="products-item__title">Смесь м300 FINGERS 50кг</div>
+    </div>
+    <span class="products-item__price">160</span>
+
+    <!-- quantity -->
+    <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+    <div class="products-item__wrapper">
+      <span class="products-item__price">160</span>
+      <p><span>Вес:</span><span>50кг</span></p>
+      <p><span>Количество:</span><span>1шт</span></p>
+    </div>
+
+    <button class="button button--accent">В корзину</button>
+  </div>
+
+  <div class="products-item">
+    <div class="products-item__image">
+      <img src="" alt="" />
+    </div>
+    <div class="products-item__wrapper">
+      <div class="products__in-stock">В наличии</div>
+      <div class="products-item__title">Смесь м300 FINGERS 50кг</div>
+    </div>
+    <span class="products-item__price">160</span>
+
+    <!-- quantity -->
+    <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+    <div class="products-item__wrapper">
+      <span class="products-item__price">160</span>
+      <p><span>Вес:</span><span>50кг</span></p>
+      <p><span>Количество:</span><span>1шт</span></p>
+    </div>
+
+    <button class="button button--accent">В корзину</button>
+  </div>
+
+  <div class="products-item">
+    <div class="products-item__image">
+      <img src="" alt="" />
+    </div>
+    <div class="products-item__wrapper">
+      <div class="products__in-stock">В наличии</div>
+      <div class="products-item__title">Смесь м300 FINGERS 50кг</div>
+    </div>
+    <span class="products-item__price">160</span>
+
+    <!-- quantity -->
+    <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+    <div class="products-item__wrapper">
+      <span class="products-item__price">160</span>
+      <p><span>Вес:</span><span>50кг</span></p>
+      <p><span>Количество:</span><span>1шт</span></p>
+    </div>
+
+    <button class="button button--accent">В корзину</button>
+  </div>
+
+  <div class="products-item">
+    <div class="products-item__image">
+      <img src="" alt="" />
+    </div>
+    <div class="products-item__wrapper">
+      <div class="products__in-stock">В наличии</div>
+      <div class="products-item__title">Смесь м300 FINGERS 50кг</div>
+    </div>
+    <span class="products-item__price">160</span>
+
+    <!-- quantity -->
+    <div class="quantity">
+  <button class="quantity__minus">-</button>
+  <input class="quantity__input" type="number" value="0" />
+  <button class="quantity__plus">+</button>
+</div>
+
+    <div class="products-item__wrapper">
+      <span class="products-item__price">160</span>
+      <p><span>Вес:</span><span>50кг</span></p>
+      <p><span>Количество:</span><span>1шт</span></p>
+    </div>
+
+    <button class="button button--accent">В корзину</button>
+  </div>
+</div>
 
 </div>
 
 
-    <!-- footer -->
-    <div class="footer">
+      <!-- footer -->
+      <div class="panel footer">
+  <div class="footer__main">
+    <div class="footer__columns">
+      <div class="footer__column">
+        <div class="footer__logo">
+          <img src="" alt="" class="footer__logo-image" />
+        </div>
 
+        <span class="footer__info">
+          © Интернет-магазин стройматериалов «Цемент–Снаб» 2001-2025. Предложения на сайте не являются публичной офертой
+        </span>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">ЦЕМЕНТ-СНАБ</span>
+        <ul>
+          <li><a href="" class="footer__link">О компании</a></li>
+          <li><a href="" class="footer__link">Производители</a></li>
+          <li><a href="" class="footer__link">Сертификаты</a></li>
+          <li><a href="" class="footer__link">Вакансии</a></li>
+          <li><a href="" class="footer__link">Согласие на обработку персональных данных</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">Где купить</span>
+        <ul>
+          <li><a href="" class="footer__link">Доставка</a></li>
+          <li><a href="" class="footer__link">Оплата</a></li>
+          <li><a href="" class="footer__link">Прайс-лист</a></li>
+          <li><a href="" class="footer__link">Статьи</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">Контактная информация</span>
+        <ul>
+          <li>
+            <span>Телефон:</span
+            ><a href="tel:+74993980591" class="footer__link footer__link--black">+7 (499) 398-05-91</a>
+          </li>
+          <li>
+            <span>Email:</span
+            ><a href="mailto:info@cement-snab.ru" class="footer__link footer__link--black">info@cement-snab.ru</a>
+          </li>
+          <li><span>Адрес:</span><span class="text--black">123007, 1-й Силикатный проезд, 13</span></li>
+          <li><span>Часы работы:</span><span class="text--black">Пн-Пт с 9:00 до 18:00</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <a href="" class="footer__link footer__link--black">Политика конфиденциальности</a>
+    <a href="" class="footer__link footer__link--black">Карта сайта</a>
+  </div>
 </div>
 
-      <script src="./js/script.js"></script>
-</body>
-
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

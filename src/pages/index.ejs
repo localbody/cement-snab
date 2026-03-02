@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bundle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/bundle.css" />
-</head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <%- include('../templates/header') %>
 
-<body>
+      <!-- breadcrumbs -->
+      <%- include('../templates/breadcrumbs') %>
 
-  <span>Проверка</span>
+      <!-- products -->
+      <%- include('../templates/product') %>
 
-  <!-- header -->
-  <%- include('../templates/header') %>
-
-
-    <!-- footer -->
-    <%- include('../templates/footer') %>
-
-      <script src="./js/script.js"></script>
-</body>
-
+      <!-- footer -->
+      <%- include('../templates/footer') %>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

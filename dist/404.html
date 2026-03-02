@@ -1,27 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bundle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/bundle.css" />
-</head>
+  <body>
+    <!-- header -->
+    <div class="header">
+  <div class="panel header__top">
+    <ul class="nav">
+      <li>Главная</li>
+      <li>Магазин</li>
+      <li>О компании</li>
+      <li>Доставка</li>
+      <li>Оплата</li>
+      <li>Статьи</li>
+      <li>Контакты</li>
+      <li>Прайс-лист</li>
+    </ul>
 
-<body>
+    <div class="header__buttons">
+      <a class="header__button" href="">
+        <img src="../icons/max.svg" alt="" />
+      </a>
+      <a class="header__button" href="">
+        <img src="../icons/whatsapp.svg" alt="" />
+      </a>
+      <button class="header__button search">
+        <img src="../icons/search.svg" alt="" />
+      </button>
+    </div>
 
-  <!-- header -->
-  <div class="header">
+    <div class="cart">
+      <button class="button button--accent button--cart">Корзина</button>
+      <span class="cart__count">999</span>
+    </div>
+  </div>
 
+  <div class="header__main">
+    <div class="header__logo">
+      <img class="header__logo-image" src="../images/logo.png" alt="" />
+    </div>
+    <button class="button button--accent button--catalog">Каталог</button>
+
+    <div class="info info--worktime">
+      <span class="info__title">Пн-Пт</span>
+      <span class="info__subtitle">с 9:00 до 18:00</span>
+    </div>
+
+    <div class="info info--email">
+      <span class="info__title">e-mail:</span>
+      <a class="info__subtitle info__link" href="mailto:info@cement-snab.ru">info@cement-snab.ru</a>
+    </div>
+
+    <div class="info info--phone">
+      <a class="info__title info__title--phone" href="tel:+74993980591">+7 (499) 398-05-91</a>
+      <button class="info__subtitle info__link info__link--callback">Заказать обратный звонок</button>
+    </div>
+  </div>
 </div>
 
 
     <!-- footer -->
-    <div class="footer">
+    <div class="panel footer">
+  <div class="footer__main">
+    <div class="footer__columns">
+      <div class="footer__column">
+        <div class="footer__logo">
+          <img src="" alt="" class="footer__logo-image" />
+        </div>
 
+        <span class="footer__info">
+          © Интернет-магазин стройматериалов «Цемент–Снаб» 2001-2025. Предложения на сайте не являются публичной офертой
+        </span>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">ЦЕМЕНТ-СНАБ</span>
+        <ul>
+          <li><a href="" class="footer__link">О компании</a></li>
+          <li><a href="" class="footer__link">Производители</a></li>
+          <li><a href="" class="footer__link">Сертификаты</a></li>
+          <li><a href="" class="footer__link">Вакансии</a></li>
+          <li><a href="" class="footer__link">Согласие на обработку персональных данных</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">Где купить</span>
+        <ul>
+          <li><a href="" class="footer__link">Доставка</a></li>
+          <li><a href="" class="footer__link">Оплата</a></li>
+          <li><a href="" class="footer__link">Прайс-лист</a></li>
+          <li><a href="" class="footer__link">Статьи</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">Контактная информация</span>
+        <ul>
+          <li>
+            <span>Телефон:</span
+            ><a href="tel:+74993980591" class="footer__link footer__link--black">+7 (499) 398-05-91</a>
+          </li>
+          <li>
+            <span>Email:</span
+            ><a href="mailto:info@cement-snab.ru" class="footer__link footer__link--black">info@cement-snab.ru</a>
+          </li>
+          <li><span>Адрес:</span><span class="text--black">123007, 1-й Силикатный проезд, 13</span></li>
+          <li><span>Часы работы:</span><span class="text--black">Пн-Пт с 9:00 до 18:00</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <a href="" class="footer__link footer__link--black">Политика конфиденциальности</a>
+    <a href="" class="footer__link footer__link--black">Карта сайта</a>
+  </div>
 </div>
 
-      <script src="./js/script.js"></script>
-</body>
 
+    <script src="./js/script.js"></script>
+  </body>
 </html>

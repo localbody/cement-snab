@@ -1,0 +1,161 @@
+.header {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav li {
+    font-size: 13px;
+    color: var(--secondary-400);
+    text-transform: uppercase;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.header__button {
+    display: grid;
+    place-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid var(--primary-500);
+}
+
+.header__button img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart__count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 16px;
+    height: 16px;
+    padding-inline: 3px;
+    display: grid;
+    place-content: center;
+    border: 1px solid var(--primary-500);
+    border-radius: 16px;
+    color: var(--primary-500);
+    font-size: 8px;
+    background-color: white;
+}
+
+.header__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+
+}
+
+.header__logo {
+    width: 263px;
+    height: 38px;
+}
+
+.header__logo-image {
+    width: 100%;
+}
+
+.button--cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button--cart::before {
+    content: '';
+    background-image: url(../icons/cart--white.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-position: center;
+}
+
+.button--catalog {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button--catalog::before {
+    content: '';
+    background-image: url(../icons/burger--white.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-position: center;
+}
+
+.info {
+    display: grid;
+    grid-template-areas:
+        "image title"
+        "image subtitle";
+    column-gap: 12px;
+    row-gap: 8px;
+}
+
+.info::before {
+    grid-area: image;
+    align-self: center;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info.info--worktime::before {
+    background-image: url(../icons/clock.svg);
+}
+
+.info.info--email::before {
+    background-image: url(../icons/mail.svg);
+}
+
+.info.info--phone::before {
+    background-image: url(../icons/phone.svg);
+}
+
+.info__title {
+    font-size: 13px;
+    color: var(--secondary-400);
+}
+
+.info__title--phone {
+    font-size: 16px;
+    color: var(--secondary-700);
+}
+
+a.info__subtitle,
+.info__subtitle {
+    font-size: 14px;
+    color: var(--secondary-700);
+}
+
+.info__link--callback {
+    color: var(--primary-500);
+}

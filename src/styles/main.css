@@ -3,17 +3,18 @@
   --desktop-width: 1200px;
 }
 
-@media (max-width: 1650px) {
-  :root {
-    --desktop-width: 100vw;
-  }
-}
-
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 html,
@@ -22,6 +23,7 @@ body {
   font-weight: 400;
   color: var(--black);
   font-size: var(--font-size);
+  background-color: var(--neutral-100);
 }
 
 ul {
@@ -33,9 +35,41 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  /* Chrome, Safari, Edge, Opera */
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  /* Firefox */
+  appearance: textfield;
+
+  /* Убираем margin у стрелок (Chrome) */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .container {
   width: 100%;
   max-width: var(--desktop-width);
   /* height: 100%; */
-  margin: 0 auto;
+  margin: 32px auto 64px auto;
+}
+
+.panel {
+  border-radius: 12px;
+  border: 1px solid var(--neutral-200);
+  background-color: white;
 }
