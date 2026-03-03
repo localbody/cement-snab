@@ -81,67 +81,68 @@
 
       <!-- products -->
       <div class="product">
-  <div class="panel product__slider"></div>
-  <div class="panel product__info">
-    <h1 class="product__title">Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)</h1>
-    <div class="product__details">
-      <h3 class="product__details-title">Характеристики товара</h3>
+  <div class="product__top">
+    <div class="panel product__slider"></div>
+    <div class="panel product__info">
+      <h1 class="product__title">Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)</h1>
+      <div class="product__specifications">
+        <h3 class="product__specifications-title">Характеристики товара</h3>
 
-      <div class="product__detail">
-        <span class="product__detail-title">Производитель</span>
-        <span class="product__detail-subtitle">Академия смеси</span>
-      </div>
-      <div class="product__detail">
-        <span class="product__detail-title">Вес</span>
-        <span class="product__detail-subtitle">50 кг</span>
-      </div>
-      <div class="product__detail">
-        <span class="product__detail-title">Тип сухой смеси</span>
-        <span class="product__detail-subtitle">Морозостойкая смесь монтажно-кладочная</span>
-      </div>
-      <div class="product__detail">
-        <span class="product__detail-title">Расход при толщине слоя 10 мм</span>
-        <span class="product__detail-subtitle">18 - 20</span>
-      </div>
-      <div class="product__detail">
-        <span class="product__detail-title">Наибольшая крупность заполнителя, не более мм</span>
-        <span class="product__detail-subtitle">2,5</span>
-      </div>
-      <div class="product__detail">
-        <span class="product__detail-title">Количество воды затворения (на мешок 50 кг), л</span>
-        <span class="product__detail-subtitle">6,5 - 8,0</span>
+        <div class="product__specification">
+          <span class="product__specification-title">Производитель</span>
+          <span class="product__specification-subtitle">Академия смеси</span>
+        </div>
+        <div class="product__specification">
+          <span class="product__specification-title">Вес</span>
+          <span class="product__specification-subtitle">50 кг</span>
+        </div>
+        <div class="product__specification">
+          <span class="product__specification-title">Тип сухой смеси</span>
+          <span class="product__specification-subtitle">Морозостойкая смесь монтажно-кладочная</span>
+        </div>
+        <div class="product__specification">
+          <span class="product__specification-title">Расход при толщине слоя 10 мм</span>
+          <span class="product__specification-subtitle">18 - 20</span>
+        </div>
+        <div class="product__specification">
+          <span class="product__specification-title">Наибольшая крупность заполнителя, не более мм</span>
+          <span class="product__specification-subtitle">2,5</span>
+        </div>
+        <div class="product__specification">
+          <span class="product__specification-title">Количество воды затворения (на мешок 50 кг), л</span>
+          <span class="product__specification-subtitle">6,5 - 8,0</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="product__wrapper">
-    <div class="panel product__to-card">
-      <div class="product__purchase">
-        <div class="product__price">
-          <span class="product__price-summa">300,00</span><sup class="product__asterix">*</sup>
+    <div class="product__wrapper">
+      <div class="panel product__to-card">
+        <div class="product__purchase">
+          <div class="product__price">
+            <span class="product__price-summa">300,00</span><sup class="product__asterix">*</sup>
+          </div>
+          <div class="product__in-stock">В наличии</div>
         </div>
-        <div class="product__in-stock">В наличии</div>
-      </div>
-      <!-- quantity -->
-      <div class="quantity">
+        <!-- quantity -->
+        <div class="quantity">
   <button class="quantity__minus">-</button>
   <input class="quantity__input" type="number" value="0" />
   <button class="quantity__plus">+</button>
 </div>
 
 
-      <div class="product__buttons">
-        <button class="button button--accent">В корзину</button>
-        <button class="button button--second">Купить в один клик</button>
+        <div class="product__buttons">
+          <button class="button button--accent">В корзину</button>
+          <button class="button button--second">Купить в один клик</button>
+        </div>
+
+        <div class="product__asterix-info">
+          <sup>*</sup>- Стоимость без учета <a class="product__delivery-link" href="">доставки</a>
+        </div>
       </div>
 
-      <div class="product__asterix-info">
-        <sup>*</sup>- Стоимость без учета <a class="product__delivery-link" href="">доставки</a>
-      </div>
-    </div>
-
-    <!-- callback -->
-    <div class="panel callback">
+      <!-- callback -->
+      <div class="panel callback">
   <span class="callback__title">Заказать обратный звонок</span>
 
   <div class="callback__inputs">
@@ -157,16 +158,17 @@
   </div>
 </div>
 
+    </div>
   </div>
 
   <div class="product__tabs">
     <div class="panel product__tabs-nav">
-      <button class="product__tabs-button product__tabs-button--active" data-tab="1">Описание товара</button>
-      <button class="product__tabs-button" data-tab="1">Характеристики</button>
-      <button class="product__tabs-button" data-tab="1">Оплата и доставка</button>
+      <button class="product__tabs-button product__tabs-button--active" data-tab="description">Описание товара</button>
+      <button class="product__tabs-button" data-tab="specifications">Характеристики</button>
+      <button class="product__tabs-button" data-tab="payment-delivery">Оплата и доставка</button>
     </div>
     <div class="panel product__tabs-content">
-      <div class="product__tab tab--show" id="tab1">
+      <div class="product__tab tab--show" hidden id="description">
         <p>Применяется для выполнения монтажно-кладочных и ремонтных работ.</p>
         <p>
           Представляет собой высокопрочную смесь, состоящую из портландцемента, фракционированного песка и минерального
@@ -177,68 +179,107 @@
           простотой приготовления, высокой морозостойкостью, устойчивостью к усадке, технологичностью.
         </p>
       </div>
-      <div class="product__tab" id="tab2">
-        <div class="product__details">
-          <div class="product__detail">
-            <span class="product__detail-title">Вес</span>
-            <span class="product__detail-subtitle">50 кг</span>
+      <div class="product__tab" hidden id="specifications">
+        <div class="product__specifications">
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__detail">
-            <span class="product__detail-title">Вес</span>
-            <span class="product__detail-subtitle">50 кг</span>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__detail">
-            <span class="product__detail-title">Вес</span>
-            <span class="product__detail-subtitle">50 кг</span>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__detail">
-            <span class="product__detail-title">Вес</span>
-            <span class="product__detail-subtitle">50 кг</span>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__detail">
-            <span class="product__detail-title">Вес</span>
-            <span class="product__detail-subtitle">50 кг</span>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__detail">
-            <span class="product__detail-title">Вес</span>
-            <span class="product__detail-subtitle">50 кг</span>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__detail">
-            <span class="product__detail-title">Вес</span>
-            <span class="product__detail-subtitle">50 кг</span>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
+          </div>
+        </div>
+
+        <div class="product__specifications">
+          <div class="product__specification">
+            <span class="product__specification-title"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad amet cupiditate cumque, molestias
+              dolorum?</span
+            >
+            <span class="product__specification-subtitle">50 кг</span>
+          </div>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
+          </div>
+          <div class="product__specification">
+            <span class="product__specification-title"
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet pariatur autem, nulla iure dolorum
+              mollitia quod nesciunt neque libero ratione.</span
+            >
+            <span class="product__specification-subtitle">50 кг</span>
+          </div>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
+          </div>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
+          </div>
+          <div class="product__specification">
+            <span class="product__specification-title">Вес</span>
+            <span class="product__specification-subtitle">50 кг</span>
           </div>
         </div>
       </div>
-      <div class="product__tab" id="tab3">
+      <div class="product__tab" id="payment-delivery">
         <h3 class="product__tab-title">Способы оплаты</h3>
-        <p class="product__tab-subtitle">Для физических лиц</p>
-        <ul class="product__tab-list">
-          <li>
-            <span>Банковская карта</span>
-            <ul class="cards-list">
-              <li><img src="" alt="" /></li>
-              <li><img src="" alt="" /></li>
-              <li><img src="" alt="" /></li>
-            </ul>
-          </li>
-        </ul>
 
-        <p class="product__tab-subtitle">Для юр. лиц</p>
-        <ul class="product__tab-list">
-          <li>Оплата по реквизитам</li>
-          <li>
-            Оставляете заявку на сайте, с Вами свяжется наш менеджер, уточнит все параметры заказа, после этого
-            выставляется счет. После поступления средств в обговоренный срок доставляем товар.
-          </li>
-          <li>
-            Вы звоните на наш номер телефона, менеджер записывает Ваш заказ. Выставляет счет на Вашу организацию.
-            Денежные средства поступают, и мы поставляем заказ в указанный Вами день.
-          </li>
-        </ul>
+        <div class="product__tab-wrapper">
+          <span class="product__tab-subtitle">Для физических лиц</span>
+          <ul class="product__tab-list">
+            <li>
+              <span>Банковская карта</span>
+              <ul class="cards-list">
+                <li><img src="../icons/mastercard.svg" alt="" /></li>
+                <li><img src="../icons/visa.svg" alt="" /></li>
+                <li><img src="../icons/mir.svg" alt="" /></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-        <h3 class="product__tab-title">Способы оплаты</h3>
-        <h3 class="product__tab-title">Способы оплаты</h3>
-        <div class="product__tab-map"></div>
+        <div class="product__tab-wrapper">
+          <span class="product__tab-subtitle">Для юр. лиц</span>
+          <ul class="product__tab-list">
+            <li>Оплата по реквизитам</li>
+            <li>
+              Оставляете заявку на сайте, с Вами свяжется наш менеджер, уточнит все параметры заказа, после этого
+              выставляется счет. После поступления средств в обговоренный срок доставляем товар.
+            </li>
+            <li>
+              Вы звоните на наш номер телефона, менеджер записывает Ваш заказ. Выставляет счет на Вашу организацию.
+              Денежные средства поступают, и мы поставляем заказ в указанный Вами день.
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="product__tab-title">Доставка</h3>
+        <div class="product__tab-map">
+          <img src="../images/map.png" alt="" />
+        </div>
       </div>
     </div>
   </div>
