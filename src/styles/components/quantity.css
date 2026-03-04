@@ -23,7 +23,7 @@
 .quantity__minus,
 .quantity__plus {
     padding-inline: 16px;
-    /* width: 41px; */
+    /* width: 36px; */
     height: 100%;
     background-color: white;
     color: var(--primary-500);
@@ -39,4 +39,15 @@
 .quantity__plus {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+.quantity--products .quantity__input {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.quantity--products .quantity__minus,
+.quantity--products .quantity__plus {
+    padding-inline: 12px;
+    font-weight: 300;
 }

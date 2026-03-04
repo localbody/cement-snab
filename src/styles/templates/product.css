@@ -99,24 +99,6 @@
     right: -16px;
 }
 
-
-.product__in-stock {
-    color: var(--whatsapp-700);
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.product__in-stock::before {
-    content: '';
-    background-image: url(../icons/in-stock.svg);
-    width: 18px;
-    height: 18px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .product__buttons {
     display: grid;
     gap: 12px;

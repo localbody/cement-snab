@@ -51,26 +51,34 @@
     display: grid;
 }
 
+.product__specifications-title {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-600);
+    margin-bottom: 20px;
+}
+
 .product__specification {
     display: flex;
     padding: 12px;
     align-items: center;
     justify-content: space-between;
     border-radius: 8px;
-    min-height: 67px;
+    min-height: 43px;
 }
 
-.product__specification:nth-child(odd) {
+.product__specification:nth-child(2n) {
     background-color: var(--neutral-100);
 }
-
 
 .product__specification-title {
     width: 70%;
     font-size: 14px;
-    line-height: 148%;
+    font-weight: 400;
     color: var(--secondary-400);
 }
+
 
 .product__specification-subtitle {
     font-size: 14px;

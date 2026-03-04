@@ -73,3 +73,28 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid var(--neutral-200);
   background-color: white;
 }
+
+.in-stock {
+  color: var(--whatsapp-700);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.in-stock::before {
+  content: '';
+  background-image: url(../icons/in-stock.svg);
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.color--accent {
+  color: var(--primary-500);
+}

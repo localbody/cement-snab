@@ -39,10 +39,13 @@
           <div class="product__price">
             <span class="product__price-summa">300,00</span><sup class="product__asterix">*</sup>
           </div>
-          <div class="product__in-stock">В наличии</div>
+          <div class="in-stock">В наличии</div>
         </div>
-        <!-- quantity -->
-        <%- include('../components/quantity') %>
+        <div class="quantity">
+          <button class="quantity__minus">-</button>
+          <input class="quantity__input" type="number" value="0" />
+          <button class="quantity__plus">+</button>
+        </div>
 
         <div class="product__buttons">
           <button class="button button--accent">В корзину</button>

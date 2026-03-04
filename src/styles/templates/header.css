@@ -11,12 +11,12 @@
     padding: 16px 24px;
 }
 
-.nav {
+.nav__links {
     display: flex;
     gap: 32px;
 }
 
-.nav li {
+.nav__link {
     font-size: 13px;
     color: var(--secondary-400);
     text-transform: uppercase;
