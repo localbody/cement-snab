@@ -1,5 +1,5 @@
 <div class="header">
-  <div class="panel header__top">
+  <div class="panel header__top" hidden--on-mobile>
     <ul class="nav__links">
       <li><a href="" class="nav__link">Главная</a></li>
       <li><a href="" class="nav__link">Магазин</a></li>
@@ -29,7 +29,9 @@
     </div>
   </div>
 
-  <div class="header__main">
+  <div class="header__main" hidden--on-mobile>
+    <%- include('../components/catalog') %>
+
     <div class="header__logo">
       <img class="header__logo-image" src="../images/logo.png" alt="" />
     </div>
@@ -42,12 +44,37 @@
 
     <div class="info info--email">
       <span class="info__title">e-mail:</span>
-      <a class="info__subtitle info__link" href="mailto:info@cement-snab.ru">info@cement-snab.ru</a>
+      <a class="info__subtitle info__link" href="mailto:info@cement-snab.ru"
+        >info@cement-snab.ru</a
+      >
     </div>
 
     <div class="info info--phone">
-      <a class="info__title info__title--phone" href="tel:+74993980591">+7 (499) 398-05-91</a>
-      <button class="info__subtitle info__link info__link--callback">Заказать обратный звонок</button>
+      <a class="info__title info__title--phone" href="tel:+74993980591"
+        >+7 (499) 398-05-91</a
+      >
+      <button class="info__subtitle info__link info__link--callback">
+        Заказать обратный звонок
+      </button>
+    </div>
+  </div>
+
+  <div class="header__mobile" hidden--on-desktop>
+    <div class="header__mobile-logo">
+      <img class="header__mobile-logo-image" src="../images/logo.png" alt="" />
+    </div>
+
+    <div class="header__mobile-actions">
+      <button class="header__mobile-search-button">
+        <img src="../icons/search.svg" alt="" />
+      </button>
+      <button class="header__mobile-cart-button">
+        <img src="../icons/cart.svg" alt="" />
+        <span class="cart__count">999</span>
+      </button>
+      <button class="header__mobile-menu-button">
+        <img src="../icons/burger.svg" alt="" />
+      </button>
     </div>
   </div>
 </div>

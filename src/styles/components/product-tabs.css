@@ -12,6 +12,18 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1199px) {
+    .product__tabs-nav {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product__tabs-nav {
+        gap: 8px;
+    }
+}
+
 .product__tabs-button {
     padding: 16px 32px;
     width: 100%;
@@ -20,6 +32,21 @@
     border-radius: 12px;
     color: var(--secondary-600);
 }
+
+@media (max-width: 1199px) {
+    .product__tabs-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product__tabs-button {
+        padding: 8px;
+        font-size: 11px;
+    }
+}
+
 
 .product__tabs-button--active {
     background-color: var(--neutral-500);
@@ -30,7 +57,12 @@
     padding: 24px;
 }
 
-.product__tab#description {
+.product__tab {
+    display: none;
+}
+
+
+.product__tab--show#description {
     display: grid;
     gap: 24px;
 }
@@ -41,18 +73,27 @@
     line-height: 148%;
 }
 
-.product__tab#specifications {
+.product__tab--show#specifications {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 12px;
 }
+
+@media (max-width: 1199px) {
+    .product__tab--show#specifications {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
 
 .product__specifications {
     display: grid;
 }
 
 .product__specifications-title {
-    width: 70%;
+    /* width: 70%; */
     font-size: 16px;
     font-weight: 400;
     color: var(--secondary-600);
@@ -61,6 +102,7 @@
 
 .product__specification {
     display: flex;
+    gap: 16px;
     padding: 12px;
     align-items: center;
     justify-content: space-between;
@@ -68,12 +110,12 @@
     min-height: 43px;
 }
 
-.product__specification:nth-child(2n) {
+.product__specification:nth-child(odd) {
     background-color: var(--neutral-100);
 }
 
 .product__specification-title {
-    width: 70%;
+    /* width: 70%; */
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-400);
@@ -86,7 +128,7 @@
     color: var(--primary-500);
 }
 
-.product__tab#payment-delivery {
+.product__tab--show#payment-delivery {
     display: grid;
     gap: 16px;
 }

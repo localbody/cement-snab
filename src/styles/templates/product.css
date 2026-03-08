@@ -9,6 +9,27 @@
     gap: 16px;
 }
 
+@media (max-width: 1199px) {
+    .product__top {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product__top-title {
+    background-color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top: 1px solid var(--neutral-200);
+    border-left: 1px solid var(--neutral-200);
+    border-right: 1px solid var(--neutral-200);
+    font-size: 16px;
+    line-height: 148%;
+    font-weight: 500;
+    padding: 16px;
+    margin: 0 1px;
+}
+
+
 .product__info {
     padding: 24px;
 }
@@ -21,6 +42,14 @@
 .product__slider {
     width: 280px;
     height: 418px;
+    background-color: transparent;
+    padding-inline: 1px;
+}
+
+@media (max-width: 1199px) {
+    .product__slider {
+        /* width: 100vw; */
+    }
 }
 
 .product__title {

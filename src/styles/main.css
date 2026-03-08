@@ -26,6 +26,42 @@ body {
   background-color: var(--neutral-100);
 }
 
+body {
+  padding-inline: 14px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 1199px) {
+  [hidden--on-mobile] {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  [hidden--on-desktop] {
+    display: none !important;
+  }
+}
+
+body.body--overflow {
+  overflow: hidden;
+}
+
+.body--overflow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(3, 22, 43, 0.48);
+  z-index: 99;
+  /* min-height: 1000vh; */
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -67,6 +103,13 @@ input[type="number"]::-webkit-inner-spin-button {
   /* height: 100%; */
   margin: 32px auto 64px auto;
 }
+
+@media (max-width: 1199px) {
+  .container {
+    margin-top: 0;
+  }
+}
+
 
 .panel {
   border-radius: 12px;

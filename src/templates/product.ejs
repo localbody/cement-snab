@@ -1,8 +1,16 @@
 <div class="product">
   <div class="product__top">
-    <div class="panel product__slider"></div>
-    <div class="panel product__info">
-      <h1 class="product__title">Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)</h1>
+    <div class="product__top-wrapper">
+      <h1 class="product__top-title" hidden--on-desktop>
+        Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)
+      </h1>
+      <div class="product__slider"><%- include('../components/slider') %></div>
+    </div>
+
+    <div class="panel product__info" hidden--on-mobile>
+      <h1 class="product__title">
+        Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)
+      </h1>
       <div class="product__specifications">
         <h3 class="product__specifications-title">Характеристики товара</h3>
 
@@ -16,18 +24,26 @@
         </div>
         <div class="product__specification">
           <span class="product__specification-title">Тип сухой смеси</span>
-          <span class="product__specification-subtitle">Морозостойкая смесь монтажно-кладочная</span>
+          <span class="product__specification-subtitle"
+            >Морозостойкая смесь монтажно-кладочная</span
+          >
         </div>
         <div class="product__specification">
-          <span class="product__specification-title">Расход при толщине слоя 10 мм</span>
+          <span class="product__specification-title"
+            >Расход при толщине слоя 10 мм</span
+          >
           <span class="product__specification-subtitle">18 - 20</span>
         </div>
         <div class="product__specification">
-          <span class="product__specification-title">Наибольшая крупность заполнителя, не более мм</span>
+          <span class="product__specification-title"
+            >Наибольшая крупность заполнителя, не более мм</span
+          >
           <span class="product__specification-subtitle">2,5</span>
         </div>
         <div class="product__specification">
-          <span class="product__specification-title">Количество воды затворения (на мешок 50 кг), л</span>
+          <span class="product__specification-title"
+            >Количество воды затворения (на мешок 50 кг), л</span
+          >
           <span class="product__specification-subtitle">6,5 - 8,0</span>
         </div>
       </div>
@@ -37,7 +53,8 @@
       <div class="panel product__to-card">
         <div class="product__purchase">
           <div class="product__price">
-            <span class="product__price-summa">300,00</span><sup class="product__asterix">*</sup>
+            <span class="product__price-summa">300,00</span
+            ><sup class="product__asterix">*</sup>
           </div>
           <div class="in-stock">В наличии</div>
         </div>
@@ -53,7 +70,8 @@
         </div>
 
         <div class="product__asterix-info">
-          <sup>*</sup>- Стоимость без учета <a class="product__delivery-link" href="">доставки</a>
+          <sup>*</sup>- Стоимость без учета
+          <a class="product__delivery-link" href="">доставки</a>
         </div>
       </div>
 
@@ -64,23 +82,33 @@
 
   <div class="product__tabs">
     <div class="panel product__tabs-nav">
-      <button class="product__tabs-button product__tabs-button--active" data-tab="description">Описание товара</button>
-      <button class="product__tabs-button" data-tab="specifications">Характеристики</button>
-      <button class="product__tabs-button" data-tab="payment-delivery">Оплата и доставка</button>
+      <button
+        class="product__tabs-button product__tabs-button--active"
+        data-tab="description"
+      >
+        Описание товара
+      </button>
+      <button class="product__tabs-button" data-tab="specifications">
+        Характеристики
+      </button>
+      <button class="product__tabs-button" data-tab="payment-delivery">
+        Оплата и доставка
+      </button>
     </div>
     <div class="panel product__tabs-content">
-      <div class="product__tab tab--show" hidden id="description">
+      <div class="product__tab product__tab--show" id="description">
         <p>Применяется для выполнения монтажно-кладочных и ремонтных работ.</p>
         <p>
-          Представляет собой высокопрочную смесь, состоящую из портландцемента, фракционированного песка и минерального
-          наполнителя.
+          Представляет собой высокопрочную смесь, состоящую из портландцемента,
+          фракционированного песка и минерального наполнителя.
         </p>
         <p>
-          Материал подходит для работ при положительных и отрицательных (модификация -15°С) температурах, отличается
-          простотой приготовления, высокой морозостойкостью, устойчивостью к усадке, технологичностью.
+          Материал подходит для работ при положительных и отрицательных
+          (модификация -15°С) температурах, отличается простотой приготовления,
+          высокой морозостойкостью, устойчивостью к усадке, технологичностью.
         </p>
       </div>
-      <div class="product__tab" hidden id="specifications">
+      <div class="product__tab" id="specifications">
         <div class="product__specifications">
           <div class="product__specification">
             <span class="product__specification-title">Вес</span>
@@ -115,8 +143,8 @@
         <div class="product__specifications">
           <div class="product__specification">
             <span class="product__specification-title"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad amet cupiditate cumque, molestias
-              dolorum?</span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              ad amet cupiditate cumque, molestias dolorum?</span
             >
             <span class="product__specification-subtitle">50 кг</span>
           </div>
@@ -126,8 +154,9 @@
           </div>
           <div class="product__specification">
             <span class="product__specification-title"
-              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet pariatur autem, nulla iure dolorum
-              mollitia quod nesciunt neque libero ratione.</span
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+              pariatur autem, nulla iure dolorum mollitia quod nesciunt neque
+              libero ratione.</span
             >
             <span class="product__specification-subtitle">50 кг</span>
           </div>
@@ -167,19 +196,26 @@
           <ul class="product__tab-list">
             <li>Оплата по реквизитам</li>
             <li>
-              Оставляете заявку на сайте, с Вами свяжется наш менеджер, уточнит все параметры заказа, после этого
-              выставляется счет. После поступления средств в обговоренный срок доставляем товар.
+              Оставляете заявку на сайте, с Вами свяжется наш менеджер, уточнит
+              все параметры заказа, после этого выставляется счет. После
+              поступления средств в обговоренный срок доставляем товар.
             </li>
             <li>
-              Вы звоните на наш номер телефона, менеджер записывает Ваш заказ. Выставляет счет на Вашу организацию.
-              Денежные средства поступают, и мы поставляем заказ в указанный Вами день.
+              Вы звоните на наш номер телефона, менеджер записывает Ваш заказ.
+              Выставляет счет на Вашу организацию. Денежные средства поступают,
+              и мы поставляем заказ в указанный Вами день.
             </li>
           </ul>
         </div>
 
         <h3 class="product__tab-title">Доставка</h3>
         <div class="product__tab-map">
-          <img src="../images/map.png" alt="" />
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.622513%2C55.753215&z=10"
+            width="100%"
+            height="100%"
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
     </div>
