@@ -1,16 +1,40 @@
 const onLoad = () => {
+  const body = document.querySelector('body')
+
+  //
+
+  const buttonMobileMainMenu = document.querySelector(
+    '.header__mobile-menu-button'
+  )
+
+  const onClickButtonMobileMainMenu = () => {
+    body.classList.add('body--overflow')
+  }
+
+  buttonMobileMainMenu?.addEventListener('click', onClickButtonMobileMainMenu)
+
+  const buttonMobileSearch = document.querySelector(
+    '.header__mobile-search-button'
+  )
+
+  const onClickButtonMobileSearch = () => {
+    body.classList.add('body--overflow')
+  }
+
+  buttonMobileSearch?.addEventListener('click', onClickButtonMobileSearch)
+
   //
 
   const onClickBody = (event) => {
     if (event.target.classList.contains('body--overflow')) {
       if (!document.querySelector('.panel.catalog').getAttribute('hidden')) {
         document.querySelector('.panel.catalog').setAttribute('hidden', true)
-        document.querySelector('body').classList.remove('body--overflow')
+        body.classList.remove('body--overflow')
       }
     }
   }
 
-  document.querySelector('body').addEventListener('click', onClickBody)
+  body.addEventListener('click', onClickBody)
 
   //
 
@@ -99,7 +123,7 @@ const onLoad = () => {
   const onClickButtonCatalog = () => {
     //
     document.querySelector('.panel.catalog').removeAttribute('hidden')
-    document.querySelector('body').classList.add('body--overflow')
+    body.classList.add('body--overflow')
   }
 
   buttonCatalog?.addEventListener('click', onClickButtonCatalog)
@@ -107,7 +131,7 @@ const onLoad = () => {
   const onClickCatalogButtonClose = () => {
     //
     document.querySelector('.panel.catalog').setAttribute('hidden', true)
-    document.querySelector('body').classList.remove('body--overflow')
+    body.classList.remove('body--overflow')
   }
 
   catalogButtonClose?.addEventListener('click', onClickCatalogButtonClose)

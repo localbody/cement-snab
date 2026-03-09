@@ -8,10 +8,177 @@
     <link rel="stylesheet" href="./css/bundle.css" />
   </head>
 
-  <body>
+  <body class="body--overflow">
     <div class="container">
       <!-- header -->
-      <div class="header">
+      <div class="mobile">
+  <div class="mobile__search"></div>
+  <div class="mobile__main-menu">
+    <ul class="mobile__menu-items">
+      <li class="mobile__menu-item mobile__menu-item--text">
+        <div class="mobile__top">
+          <div class="mobile__title">Главное меню</div>
+          <button class="mobile__close"></button>
+        </div>
+      </li>
+      <li class="mobile__menu-item" data-menu="menu">
+        <span class="mobile__menu-title">Каталог товаров</span>
+        <ul class="mobile__menu-items" hidden>
+          <li class="mobile__menu-item" data-menu="back">Назад к меню</li>
+          <li class="mobile__menu-item">
+            <span class="mobile__menu-title">Цемент</span>
+
+            <div class="mobile__menu-content" hidden>
+              <ul class="mobile__menu-items">
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Рабочая температура</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">От -10 до -20 С</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">От -20 до -30 С</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">От -30 и выше</a>
+                </li>
+              </ul>
+
+              <ul class="mobile__menu-items">
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Действующее вещество</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Минеральный галит</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Пескосоль</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Хлорид кальция</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Хлорид магния</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Гранитная крошка</a>
+                </li>
+              </ul>
+
+              <ul class="mobile__menu-items">
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Производитель</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Бионорд</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">ICEHIT</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">ICEMELT</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">DMS</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">DMS</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Баскунчак</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Карелия Тайп</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Пескодром</a>
+                </li>
+                <li class="mobile__menu-item">
+                  <a class="mobile__menu-link" href="">Урал Ресурс</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="mobile__menu-item">Противогололедные реагенты</li>
+          <li class="mobile__menu-item">Сухие строительные смеси</li>
+          <li class="mobile__menu-item">АЦЭИД</li>
+          <li class="mobile__menu-item">Асбестоцементные листы</li>
+          <li class="mobile__menu-item">Асбестоцементные трубы</li>
+          <li class="mobile__menu-item">Химреактивы</li>
+          <li class="mobile__menu-item">Асбестоцементные изделия</li>
+          <li class="mobile__menu-item">Модифицированные смеси</li>
+          <li class="mobile__menu-item">Плоский шифер</li>
+          <li class="mobile__menu-item">Щебень</li>
+          <li class="mobile__menu-item">Металлопрокат</li>
+          <li class="mobile__menu-item">Металлопрокат</li>
+          <li class="mobile__menu-item">ЖБИ</li>
+          <li class="mobile__menu-item">Стеновые материалы</li>
+          <li class="mobile__menu-item">Другое</li>
+        </ul>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">Цемент</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">Магазин</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">О компании</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">Доставка</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">Оплата</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">Статьи</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">Контакты</a>
+      </li>
+      <li class="mobile__menu-item">
+        <a class="mobile__menu-link" href="">Прайс-лист</a>
+      </li>
+      <li class="mobile__menu-item">
+        <div class="mobile__menu-item-wrapper">
+          <img src="../icons/max.svg" alt="" />
+          <a class="mobile__menu-link" href="">Max</a>
+        </div>
+      </li>
+      <li class="mobile__menu-item">
+        <div class="mobile__menu-item-wrapper">
+          <img src="../icons/whatsapp.svg" alt="" />
+          <a class="mobile__menu-link" href="">Whatsapp</a>
+        </div>
+      </li>
+
+      <li class="mobile__menu-item mobile__menu-item--text">
+        <div class="mobile__menu-item-wrapper">
+          <img src="../icons/clock.svg" alt="" />
+          <span class="color--gray">Пн-Пт:</span
+          ><span class="color--primary-900">с 9:00 до 18:00</span>
+        </div>
+      </li>
+      <li class="mobile__menu-item">
+        <div class="mobile__menu-item-wrapper">
+          <img src="../icons/mail.svg" alt="" />
+          <span class="color--gray">E-mail:</span
+          ><a class="mobile__menu-link" href="mailto:">info@cement-snab.ru</a>
+        </div>
+      </li>
+      <li class="mobile__menu-item">
+        <div class="mobile__menu-item-wrapper">
+          <img src="../icons/phone.svg" alt="" />
+          <a class="mobile__menu-link" href="tel:">+7 (499) 398-05-91</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="header">
   <div class="panel header__top" hidden--on-mobile>
     <ul class="nav__links">
       <li><a href="" class="nav__link">Главная</a></li>
@@ -1949,6 +2116,7 @@
       <h1 class="product__top-title" hidden--on-desktop>
         Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)
       </h1>
+
       <div class="product__slider"><div class="swiper product__swiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">

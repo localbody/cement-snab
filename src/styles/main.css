@@ -141,3 +141,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .color--accent {
   color: var(--primary-500);
 }
+
+.color--gray {
+  color: var(--secondary-400);
+}
+
+.color--primary-900 {
+  color: var(--primary-900);
+}
