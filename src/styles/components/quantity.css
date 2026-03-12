@@ -12,6 +12,7 @@
 .quantity__input {
     background-color: var(--neutral-100);
     border: none;
+    border-radius: 0;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -22,6 +23,7 @@
 
 .quantity__minus,
 .quantity__plus {
+    touch-action: manipulation;
     padding-inline: 16px;
     /* width: 36px; */
     height: 100%;
