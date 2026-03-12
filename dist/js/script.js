@@ -3,15 +3,13 @@ const onLoad = () => {
 
   //
 
-  const buttonMobileMainMenu = document.querySelector(
-    '.header__mobile-menu-button'
-  )
+  const buttonMobileMenu = document.querySelector('.header__mobile-menu-button')
 
-  const onClickButtonMobileMainMenu = () => {
+  const onClickButtonMobileMenu = () => {
     body.classList.add('body--overflow')
   }
 
-  buttonMobileMainMenu?.addEventListener('click', onClickButtonMobileMainMenu)
+  buttonMobileMenu?.addEventListener('click', onClickButtonMobileMenu)
 
   const buttonMobileSearch = document.querySelector(
     '.header__mobile-search-button'
