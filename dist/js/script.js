@@ -3,10 +3,22 @@ const onLoad = () => {
 
   //
 
+  const buttonMobileClose = document.querySelector('.mobile__close')
+
+  const onClickButtonMobileClose = () => {
+    body.classList.remove('body--overflow')
+    document.querySelector('.mobile').setAttribute('hidden', true)
+  }
+
+  buttonMobileClose?.addEventListener('click', onClickButtonMobileClose)
+
+  //
+
   const buttonMobileMenu = document.querySelector('.header__mobile-menu-button')
 
   const onClickButtonMobileMenu = () => {
     body.classList.add('body--overflow')
+    document.querySelector('.mobile').removeAttribute('hidden')
   }
 
   buttonMobileMenu?.addEventListener('click', onClickButtonMobileMenu)

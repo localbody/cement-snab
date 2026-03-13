@@ -86,11 +86,9 @@
 @media (max-width: 1199px) {
     .product__tab--show#specifications {
         grid-template-columns: 1fr;
-
+        row-gap: 43px;
     }
 }
-
-
 
 .product__specifications {
     display: grid;
@@ -117,6 +115,7 @@
 .product__specification:nth-child(odd) {
     background-color: var(--neutral-100);
 }
+
 
 .product__specification-title {
     /* width: 70%; */

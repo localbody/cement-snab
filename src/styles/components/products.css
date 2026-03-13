@@ -109,6 +109,11 @@
     content: "₽";
 }
 
+.products-item__under {
+    font-size: 11px;
+    color: var(--secondary-400);
+}
+
 .products-item__description {
     padding-left: 32px;
     display: grid;

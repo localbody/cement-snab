@@ -664,6 +664,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .color--primary-900 {
   color: var(--primary-900);
 }
+
+.place-items--center {
+  place-items: center;
+}
 .footer {
     margin-top: 48px;
     padding: 24px;
@@ -1632,11 +1636,9 @@ a.info__subtitle:hover {
 @media (max-width: 1199px) {
     .product__tab--show#specifications {
         grid-template-columns: 1fr;
-
+        row-gap: 43px;
     }
 }
-
-
 
 .product__specifications {
     display: grid;
@@ -1663,6 +1665,7 @@ a.info__subtitle:hover {
 .product__specification:nth-child(odd) {
     background-color: var(--neutral-100);
 }
+
 
 .product__specification-title {
     /* width: 70%; */
@@ -1850,6 +1853,11 @@ a.info__subtitle:hover {
 
 .products-item__price::after {
     content: "₽";
+}
+
+.products-item__under {
+    font-size: 11px;
+    color: var(--secondary-400);
 }
 
 .products-item__description {

@@ -149,3 +149,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .color--primary-900 {
   color: var(--primary-900);
 }
+
+.place-items--center {
+  place-items: center;
+}
