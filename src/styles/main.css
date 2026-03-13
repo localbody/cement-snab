@@ -73,6 +73,7 @@ li {
 
 a {
   text-decoration: none;
+  transition: .3s all ease;
 }
 
 button {
@@ -109,7 +110,6 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-top: 0;
   }
 }
-
 
 .panel {
   border-radius: 12px;

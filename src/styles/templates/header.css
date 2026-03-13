@@ -74,6 +74,10 @@
     text-transform: uppercase;
 }
 
+.nav__link:hover {
+    color: var(--primary-500);
+}
+
 .header__buttons {
     display: flex;
     gap: 8px;
@@ -86,6 +90,10 @@
     height: 48px;
     border-radius: 48px;
     border: 1px solid var(--primary-500);
+}
+
+.header__button:hover {
+    background-color: var(--neutral-500);
 }
 
 .header__button img {
@@ -202,12 +210,25 @@
     color: var(--secondary-700);
 }
 
+.info__title--phone:hover {
+    color: var(--primary-500);
+}
+
 a.info__subtitle,
 .info__subtitle {
     font-size: 14px;
     color: var(--secondary-700);
 }
 
+a.info__subtitle:hover {
+    color: var(--primary-500);
+}
+
 .info__link--callback {
     color: var(--primary-500);
+}
+
+.info__link--callback:hover {
+    text-decoration: underline;
+    color: var(--primary-700);
 }

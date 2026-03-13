@@ -33,6 +33,10 @@
     color: var(--secondary-600);
 }
 
+.product__tabs-button:hover {
+    background-color: var(--neutral-600);
+}
+
 @media (max-width: 1199px) {
     .product__tabs-button {
         padding: 8px 12px;

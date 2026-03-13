@@ -21,10 +21,15 @@
     border-radius: 12px;
     color: var(--secondary-600);
     font-size: 14px;
+    transition: .3s all ease;
 }
 
 .callback__input::placeholder {
     color: var(--secondary-400);
+}
+
+.callback__input:focus {
+    border: 1px solid var(--primary-500);
 }
 
 .callback__links {
@@ -41,6 +46,11 @@
     font-size: 12px;
 }
 
+.callback__link:hover {
+    color: var(--secondary-500);
+    text-decoration: underline;
+}
+
 .callback__link::before {
     content: '';
     width: 24px;
@@ -50,10 +60,16 @@
     background-position: center;
 }
 
+.callback__link--max:hover,
+.callback__link--whatsapp:hover {
+    color: var(--secondary-400);
+    text-decoration: none;
+}
+
 .callback__link--max::before {
     background-image: url(../icons/max--color.svg);
 }
 
-.callback__link--whatsappp::before {
+.callback__link--whatsapp::before {
     background-image: url(../icons/whatsapp--color.svg);
 }

@@ -12,6 +12,11 @@
     color: var(--primary-500);
 }
 
+.breadcrumbs__link:hover {
+    color: var(--primary-700);
+    text-decoration: underline;
+}
+
 .breadcrumbs__current {
     font-weight: 600;
     color: var(--secondary-400);

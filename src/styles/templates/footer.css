@@ -71,8 +71,16 @@
     font-size: 13px;
 }
 
+.footer__link:hover {
+    color: var(--primary-500);
+}
+
 .footer__link--black {
     color: var(--secondary-700);
+}
+
+.footer__link--black:hover {
+    color: var(--primary-500);
 }
 
 .footer__contacts {

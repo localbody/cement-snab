@@ -142,6 +142,11 @@
     text-decoration: underline;
 }
 
+.product__delivery-link:hover {
+    color: var(--primary-800);
+    text-decoration: none;
+}
+
 .product__asterix-info sup {
     position: absolute;
     top: 6px;

@@ -3,6 +3,8 @@
   --white: #ffffff;
 
   --primary-500: #0066D9;
+  --primary-700: #0053B1;
+  --primary-800: #004088;
   --primary-900: #132132;
 
   --neutral-100: #F6FAFD;
@@ -13,11 +15,11 @@
   --neutral-300: #F6FAFD;
   --neutral-400: #EBF3FC;
   --neutral-500: rgba(0, 102, 217, 0.08);
+  --neutral-600: rgba(0, 102, 217, 0.04);
 
   --secondary-400: #747679;
   --secondary-600: #272727;
   --secondary-700: #212121;
 
   --whatsapp-700: #4CAF50;
-
 }

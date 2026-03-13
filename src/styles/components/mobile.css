@@ -1,19 +1,31 @@
 .mobile {
     position: absolute;
-    padding: 16px 8px;
+    padding-block: 16px;
     z-index: 100;
     left: 8px;
     right: 8px;
     top: 16px;
     bottom: 16px;
-    overflow: scroll;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid var(--neutral-200);
+    overflow: hidden;
+
+    background-color: red;
+}
+
+.mobile__inner {
+    background-color: blue;
+    height: 100%;
+    overflow: hidden;
 }
 
 .mobile__main-menu {
-    padding: 0 16px 16px 16px;
-    background-color: white;
-    border-radius: 8px;
-    border: 1px solid var(--neutral-200);
+    /* padding: 0 16px 16px 16px; */
+
+    overflow: scroll;
+    height: 100%;
+    padding-bottom: 32px;
 }
 
 .mobile__top {
@@ -55,11 +67,11 @@
 }
 
 .mobile__menu-item {
-    border-bottom: 1px solid var(--neutral-200);
+    border-bottom: 1px solid var(--neutral-100);
     cursor: pointer;
     display: flex;
     align-items: center;
-
+    padding-inline: 16px;
 }
 
 .mobile__menu-item>* {
