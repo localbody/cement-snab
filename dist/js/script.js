@@ -3,6 +3,55 @@ const onLoad = () => {
 
   //
 
+  const showCatalogSubmenuItems = document.querySelectorAll(
+    '[data-action="show-catalog-submenu"]'
+  )
+
+  const onClickShowCatalogSubmenuItems = (event) => {
+    console.log(event.target, event.currentTarget)
+    //
+    if (event.currentTarget.getAttribute('show'))
+      event.currentTarget.removeAttribute('show')
+    else event.currentTarget.setAttribute('show', true)
+  }
+
+  showCatalogSubmenuItems.forEach((item) => {
+    item.addEventListener('click', onClickShowCatalogSubmenuItems)
+  })
+
+  const mobileCatalog = document.querySelector('[data-menu="mobile-catalog"]')
+
+  const buttonOpenMobileCatalog = document.querySelector(
+    '[data-action="open-mobile-catalog"]'
+  )
+  const buttonCloseMobileCatalog = document.querySelector(
+    '[data-action="close-mobile-catalog"]'
+  )
+
+  const onClickButtonOpenMobileCatalog = (event) => {
+    buttonOpenMobileCatalog.setAttribute('hidden', 'true')
+    buttonCloseMobileCatalog.removeAttribute('hidden')
+    mobileCatalog.removeAttribute('hidden')
+  }
+
+  buttonOpenMobileCatalog.addEventListener(
+    'click',
+    onClickButtonOpenMobileCatalog
+  )
+
+  const onClickButtonCloseMobileCatalog = () => {
+    buttonCloseMobileCatalog.setAttribute('hidden', true)
+    buttonOpenMobileCatalog.removeAttribute('hidden')
+    mobileCatalog.setAttribute('hidden', true)
+  }
+
+  buttonCloseMobileCatalog.addEventListener(
+    'click',
+    onClickButtonCloseMobileCatalog
+  )
+
+  //
+
   const buttonMobileClose = document.querySelector('.mobile__close')
 
   const onClickButtonMobileClose = () => {
