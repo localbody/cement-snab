@@ -1,9 +1,9 @@
-.footer {
+.cems-footer {
     margin-top: 48px;
     padding: 24px;
 }
 
-.footer__columns {
+.cems-footer__columns {
     padding-bottom: 24px;
     display: grid;
     gap: 48px;
@@ -14,99 +14,99 @@
 
 
 @media (max-width: 1199px) {
-    .footer__columns {
+    .cems-footer__columns {
         grid-template-columns: 1fr;
         gap: 24px;
     }
 }
 
-.footer__logo {
+.cems-footer__logo {
     width: 315px;
     height: 45px;
     margin-bottom: 24px;
 }
 
 @media (max-width: 1199px) {
-    .footer__logo {
+    .cems-footer__logo {
         width: 164px;
         height: 23px;
         margin-bottom: 16px;
     }
 }
 
-.footer__logo img {
+.cems-footer__logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.footer__info {
+.cems-footer__info {
     font-size: 13px;
     line-height: 148%;
 }
 
-.footer__column-title {
+.cems-footer__column-title {
     color: var(--secondary-700);
     text-transform: uppercase;
     font-size: 13px;
     margin-bottom: 24px;
 }
 
-.footer__top {
+.cems-footer__top {
     margin-bottom: 24px;
 }
 
-.footer__bottom {
+.cems-footer__bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__links {
+.cems-footer__links {
     display: grid;
     gap: 16px;
 }
 
-.footer__link {
+.cems-footer__link {
     color: var(--secondary-400);
     font-size: 13px;
 }
 
-.footer__link:hover {
+.cems-footer__link:hover {
     color: var(--primary-500);
 }
 
-.footer__link--black {
+.cems-footer__link--black {
     color: var(--secondary-700);
 }
 
-.footer__link--black:hover {
+.cems-footer__link--black:hover {
     color: var(--primary-500);
 }
 
-.footer__contacts {
+.cems-footer__contacts {
     display: grid;
     gap: 16px;
 }
 
-.footer__contact {
+.cems-footer__contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 @media (max-width: 1199px) {
-    .footer__contact {
+    .cems-footer__contact {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
 }
 
-.footer__contact span:first-child {
+.cems-footer__contact span:first-child {
     color: var(--secondary-400);
     font-size: 13px;
 }
 
-.footer__contact span:last-child {
+.cems-footer__contact span:last-child {
     color: var(--secondary-700);
     font-size: 13px;
     text-align: right;
@@ -114,8 +114,8 @@
 
 @media (max-width: 1199px) {
 
-    .footer__contact span:last-child,
-    .footer__contact a {
+    .cems-footer__contact span:last-child,
+    .cems-footer__contact a {
         text-align: left;
     }
 }

@@ -1,4 +1,4 @@
-.breadcrumbs {
+.cems-breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -7,17 +7,17 @@
     margin-bottom: 24px;
 }
 
-.breadcrumbs__divider,
-.breadcrumbs__link {
+.cems-breadcrumbs__divider,
+.cems-breadcrumbs__link {
     color: var(--primary-500);
 }
 
-.breadcrumbs__link:hover {
+.cems-breadcrumbs__link:hover {
     color: var(--primary-700);
     text-decoration: underline;
 }
 
-.breadcrumbs__current {
+.cems-breadcrumbs__current {
     font-weight: 600;
     color: var(--secondary-400);
 }

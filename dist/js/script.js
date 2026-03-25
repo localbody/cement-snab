@@ -52,28 +52,30 @@ const onLoad = () => {
 
   //
 
-  const buttonMobileClose = document.querySelector('.mobile__close')
+  const buttonMobileClose = document.querySelector('.cems-mobile__close')
 
   const onClickButtonMobileClose = () => {
     body.classList.remove('body--overflow')
-    document.querySelector('.mobile').setAttribute('hidden', true)
+    document.querySelector('.cems-mobile').setAttribute('hidden', true)
   }
 
   buttonMobileClose?.addEventListener('click', onClickButtonMobileClose)
 
   //
 
-  const buttonMobileMenu = document.querySelector('.header__mobile-menu-button')
+  const buttonMobileMenu = document.querySelector(
+    '.cems-header__mobile-menu-button'
+  )
 
   const onClickButtonMobileMenu = () => {
     body.classList.add('body--overflow')
-    document.querySelector('.mobile').removeAttribute('hidden')
+    document.querySelector('.cems-mobile').removeAttribute('hidden')
   }
 
   buttonMobileMenu?.addEventListener('click', onClickButtonMobileMenu)
 
   const buttonMobileSearch = document.querySelector(
-    '.header__mobile-search-button'
+    '.cems-header__mobile-search-button'
   )
 
   const onClickButtonMobileSearch = () => {
@@ -86,8 +88,12 @@ const onLoad = () => {
 
   const onClickBody = (event) => {
     if (event.target.classList.contains('body--overflow')) {
-      if (!document.querySelector('.panel.catalog').getAttribute('hidden')) {
-        document.querySelector('.panel.catalog').setAttribute('hidden', true)
+      if (
+        !document.querySelector('.cems-panel.catalog').getAttribute('hidden')
+      ) {
+        document
+          .querySelector('.cems-panel.catalog')
+          .setAttribute('hidden', true)
         body.classList.remove('body--overflow')
       }
     }
@@ -98,30 +104,34 @@ const onLoad = () => {
   //
 
   const listProductTabsButtons = document.querySelectorAll(
-    '.product__tabs-button'
+    '.cems-product__tabs-button'
   )
 
   const onClickTabButton = (event) => {
     if (
-      event.currentTarget.classList.contains('product__tabs-button--active')
+      event.currentTarget.classList.contains(
+        'cems-product__tabs-button--active'
+      )
     ) {
       //
     } else {
       const tabButton = event.currentTarget
 
       document
-        .querySelector('.product__tabs-button.product__tabs-button--active')
-        .classList.remove('product__tabs-button--active')
+        .querySelector(
+          '.cems-product__tabs-button.cems-product__tabs-button--active'
+        )
+        .classList.remove('cems-product__tabs-button--active')
       document
-        .querySelector('.product__tab--show')
-        .classList.remove('product__tab--show')
+        .querySelector('.cems-product__tab--show')
+        .classList.remove('cems-product__tab--show')
 
       const tab = tabButton.dataset?.tab
 
       console.log(tab)
 
-      document.querySelector(`#${tab}`).classList.add('product__tab--show')
-      tabButton.classList.add('product__tabs-button--active')
+      document.querySelector(`#${tab}`).classList.add('cems-product__tab--show')
+      tabButton.classList.add('cems-product__tabs-button--active')
     }
   }
 
@@ -130,34 +140,13 @@ const onLoad = () => {
   })
 
   //
-  var thumbs = new Swiper('.product__swiper-thumbs', {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 3,
-    freeMode: true,
-    watchSlidesProgress: true,
-  })
 
-  var productSwiper = new Swiper('.product__swiper', {
-    loop: true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.product__swiper-button-next',
-      prevEl: '.product__swiper-button-prev',
-    },
-    thumbs: {
-      swiper: thumbs,
-    },
-  })
-
-  //
-
-  const listQuantities = document.querySelectorAll('.quantity')
+  const listQuantities = document.querySelectorAll('.cems-quantity')
 
   listQuantities?.forEach((quantity) => {
-    const minus = quantity.querySelector('.quantity__minus')
-    const plus = quantity.querySelector('.quantity__plus')
-    const input = quantity.querySelector('.quantity__input')
+    const minus = quantity.querySelector('.cems-quantity__minus')
+    const plus = quantity.querySelector('.cems-quantity__plus')
+    const input = quantity.querySelector('.cems-quantity__input')
 
     const onClickMinus = () => {
       if (input?.value > 0) {
@@ -175,44 +164,73 @@ const onLoad = () => {
 
   //
 
-  const catalogButtonClose = document.querySelector('.catalog__button-close')
+  const catalogButtonClose = document.querySelector(
+    '.cems-catalog__button-close'
+  )
 
-  const buttonCatalog = document.querySelector('.button--catalog')
+  const buttonCatalog = document.querySelector('.cems-button--catalog')
 
   const onClickButtonCatalog = () => {
     //
-    document.querySelector('.panel.catalog').removeAttribute('hidden')
-    body.classList.add('body--overflow')
+    document.querySelector('.cems-panel.cems-catalog').removeAttribute('hidden')
+    body.classList.add('cems-body--overflow')
   }
 
   buttonCatalog?.addEventListener('click', onClickButtonCatalog)
 
   const onClickCatalogButtonClose = () => {
     //
-    document.querySelector('.panel.catalog').setAttribute('hidden', true)
-    body.classList.remove('body--overflow')
+    document
+      .querySelector('.cems-panel.cems-catalog')
+      .setAttribute('hidden', true)
+    body.classList.remove('cems-body--overflow')
   }
 
   catalogButtonClose?.addEventListener('click', onClickCatalogButtonClose)
 
-  const listCatalogMenuItems = document.querySelectorAll('.catalog__menu-item')
+  const listCatalogMenuItems = document.querySelectorAll(
+    '.cems-catalog__menu-item'
+  )
 
   const onClickCatalogMenuItem = (event) => {
     //
 
-    if (event.currentTarget.classList.contains('catalog__menu-item--active')) {
+    if (
+      event.currentTarget.classList.contains('cems-catalog__menu-item--active')
+    ) {
       //  event.currentTarget.classList.remove('catalog__menu-item--active')
     } else {
       document
-        .querySelector('.catalog__menu-item.catalog__menu-item--active')
-        ?.classList.remove('catalog__menu-item--active')
-      event.currentTarget.classList.add('catalog__menu-item--active')
+        .querySelector('.cems-catalog__menu-item.catalog__menu-item--active')
+        ?.classList.remove('cems-catalog__menu-item--active')
+      event.currentTarget.classList.add('cems-catalog__menu-item--active')
     }
   }
 
   listCatalogMenuItems?.forEach((item) => {
     // console.log(item)
     item.addEventListener('click', onClickCatalogMenuItem)
+  })
+
+  //
+  var thumbs = new Swiper('.cems-product__swiper-thumbs', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  })
+
+  var productSwiper = new Swiper('.cems-product__swiper', {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.cems-product__swiper-button-next',
+      prevEl: '.cems-product__swiper-button-prev',
+    },
+    thumbs: {
+      swiper: thumbs,
+    },
   })
 }
 

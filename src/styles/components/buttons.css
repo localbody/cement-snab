@@ -1,28 +1,28 @@
-.button {
+.cems-button {
     border-width: 1px solid var(--primary-500);
     border-radius: 12px;
     padding: 12px 24px;
     font-size: 14px;
 }
 
-.button--accent {
+.cems-button--accent {
     background-color: var(--primary-500);
     color: white;
-    transition: .3s all ease;
+    transition: .cems-3s all ease;
 }
 
-.button--accent:hover {
+.cems-button--accent:hover {
     background-color: var(--primary-700);
 }
 
-.button--second {
+.cems-button--second {
     background-color: transparent;
     color: var(--primary-500);
     border: 1px solid var(--primary-500);
-    transition: .3s all ease;
+    transition: .cems-3s all ease;
 }
 
-.button--second:hover {
+.cems-button--second:hover {
     background-color: var(--primary-500);
     color: white;
 }

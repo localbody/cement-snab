@@ -1,80 +1,94 @@
-<%- include('../components/mobile.ejs') %>
+<%- include('../components/mobile') %>
 
-<div class="header">
-  <div class="panel header__top" hidden--on-mobile>
-    <ul class="nav__links">
-      <li><a href="" class="nav__link">Главная</a></li>
-      <li><a href="" class="nav__link">Магазин</a></li>
-      <li><a href="" class="nav__link">О компании</a></li>
-      <li><a href="" class="nav__link">Доставка</a></li>
-      <li><a href="" class="nav__link">Оплата</a></li>
-      <li><a href="" class="nav__link">Статьи</a></li>
-      <li><a href="" class="nav__link">Контакты</a></li>
-      <li><a href="" class="nav__link">Прайс-лист</a></li>
+<div class="cems-header">
+  <div class="cems-panel cems-header__top" hidden--on-mobile>
+    <ul class="cems-nav__links">
+      <li><a href="" class="cems-nav__link">Главная</a></li>
+      <li><a href="" class="cems-nav__link">Магазин</a></li>
+      <li><a href="" class="cems-nav__link">О компании</a></li>
+      <li><a href="" class="cems-nav__link">Доставка</a></li>
+      <li><a href="" class="cems-nav__link">Оплата</a></li>
+      <li><a href="" class="cems-nav__link">Статьи</a></li>
+      <li><a href="" class="cems-nav__link">Контакты</a></li>
+      <li><a href="" class="cems-nav__link">Прайс-лист</a></li>
     </ul>
 
-    <div class="header__buttons">
-      <a class="header__button" href="">
+    <div class="cems-header__buttons">
+      <a class="cems-header__button" href="">
         <img src="../icons/max.svg" alt="" />
       </a>
-      <a class="header__button" href="">
+      <a class="cems-header__button" href="">
         <img src="../icons/whatsapp.svg" alt="" />
       </a>
-      <button class="header__button search">
+      <button class="cems-header__button cems-search">
         <img src="../icons/search.svg" alt="" />
       </button>
     </div>
 
-    <div class="cart">
-      <button class="button button--accent button--cart">Корзина</button>
-      <span class="cart__count">999</span>
+    <div class="cems-cart">
+      <button class="cems-button cems-button--accent cems-button--cart">
+        Корзина
+      </button>
+      <span class="cems-cart__count">999</span>
     </div>
   </div>
 
-  <div class="header__main" hidden--on-mobile>
+  <div class="cems-header__main" hidden--on-mobile>
     <%- include('../components/catalog') %>
 
-    <div class="header__logo">
-      <img class="header__logo-image" src="../images/logo.png" alt="" />
+    <div class="cems-header__logo">
+      <img class="cems-header__logo-image" src="../images/logo.png" alt="" />
     </div>
-    <button class="button button--accent button--catalog">Каталог</button>
+    <button class="cems-button cems-button--accent cems-button--catalog">
+      Каталог
+    </button>
 
-    <div class="info info--worktime">
-      <span class="info__title">Пн-Пт</span>
-      <span class="info__subtitle">с 9:00 до 18:00</span>
+    <div class="cems-info cems-info--worktime">
+      <span class="cems-info__title">Пн-Пт</span>
+      <span class="cems-info__subtitle">с 9:00 до 18:00</span>
     </div>
 
-    <div class="info info--email">
-      <span class="info__title">e-mail:</span>
-      <a class="info__subtitle info__link" href="mailto:info@cement-snab.ru"
+    <div class="cems-info cems-info--email">
+      <span class="cems-info__title">e-mail:</span>
+      <a
+        class="cems-info__subtitle cems-info__link"
+        href="mailto:info@cement-snab.ru"
         >info@cement-snab.ru</a
       >
     </div>
 
-    <div class="info info--phone">
-      <a class="info__title info__title--phone" href="tel:+74993980591"
+    <div class="cems-info cems-info--phone">
+      <a
+        class="cems-info__title cems-info__title--phone"
+        href="tel:+74993980591"
         >+7 (499) 398-05-91</a
       >
-      <button class="info__subtitle info__link info__link--callback">
+      <button
+        class="cems-info__subtitle cems-info__link cems-info__link--callback"
+      >
         Заказать обратный звонок
       </button>
     </div>
   </div>
 
-  <div class="header__mobile" hidden--on-desktop>
-    <div class="header__mobile-logo">
-      <img class="header__mobile-logo-image" src="../images/logo.png" alt="" />
+  <div class="cems-header__mobile" hidden--on-desktop>
+    <div class="cems-header__mobile-logo">
+      <img
+        class="cems-header__mobile-logo-image"
+        src="../images/logo.png"
+        alt=""
+      />
     </div>
 
-    <div class="header__mobile-actions">
-      <button class="header__mobile-search-button">
+    <div class="cems-header__mobile-actions">
+      <button class="cems-header__mobile-search-button">
         <img src="../icons/search.svg" alt="" />
       </button>
-      <button class="header__mobile-cart-button">
+      <button class="cems-header__mobile-cart-button">
         <img src="../icons/cart.svg" alt="" />
-        <span class="cart__count">999</span>
+        <span class="cems-cart__count">999</span>
       </button>
-      <button class="header__mobile-menu-button">
+      <button class="cems-header__mobile-menu-button">
         <img src="../icons/burger.svg" alt="" />
       </button>
     </div>

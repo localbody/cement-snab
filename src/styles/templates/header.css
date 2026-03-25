@@ -1,10 +1,10 @@
-.header {
+.cems-header {
     display: grid;
     gap: 24px;
     margin-bottom: 48px;
 }
 
-.header__mobile {
+.cems-header__mobile {
     margin-inline: -14px;
     background-color: white;
     display: flex;
@@ -14,76 +14,76 @@
     padding: 12px 14px;
 }
 
-.header__mobile-logo {
+.cems-header__mobile-logo {
     width: 163px;
     height: 23px;
 }
 
-.header__mobile-logo-image {
+.cems-header__mobile-logo-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.header__mobile-actions {
+.cems-header__mobile-actions {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.header__mobile-search-button,
-.header__mobile-cart-button,
-.header__mobile-menu-button {
+.cems-header__mobile-search-button,
+.cems-header__mobile-cart-button,
+.cems-header__mobile-menu-button {
     width: 28px;
     height: 28px;
     display: grid;
     place-content: center;
 }
 
-.header__mobile-search-button img,
-.header__mobile-cart-button img,
-.header__mobile-menu-button img {
+.cems-header__mobile-search-button img,
+.cems-header__mobile-cart-button img,
+.cems-header__mobile-menu-button img {
     width: 24px;
     height: 24px;
 }
 
-.header__mobile-cart-button {
+.cems-header__mobile-cart-button {
     position: relative;
 }
 
-.header__mobile-cart-button .cart__count {
+.cems-header__mobile-cart-button .cems-cart__count {
     background-color: var(--primary-500);
     color: white;
 }
 
-.header__top {
+.cems-header__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 24px;
 }
 
-.nav__links {
+.cems-nav__links {
     display: flex;
     gap: 32px;
 }
 
-.nav__link {
+.cems-nav__link {
     font-size: 13px;
     color: var(--secondary-400);
     text-transform: uppercase;
 }
 
-.nav__link:hover {
+.cems-nav__link:hover {
     color: var(--primary-500);
 }
 
-.header__buttons {
+.cems-header__buttons {
     display: flex;
     gap: 8px;
 }
 
-.header__button {
+.cems-header__button {
     display: grid;
     place-content: center;
     width: 48px;
@@ -92,20 +92,20 @@
     border: 1px solid var(--primary-500);
 }
 
-.header__button:hover {
+.cems-header__button:hover {
     background-color: var(--neutral-500);
 }
 
-.header__button img {
+.cems-header__button img {
     width: 24px;
     height: 24px;
 }
 
-.cart {
+.cems-cart {
     position: relative;
 }
 
-.cart__count {
+.cems-cart__count {
     position: absolute;
     top: -6px;
     right: -6px;
@@ -121,7 +121,7 @@
     background-color: white;
 }
 
-.header__main {
+.cems-header__main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,22 +129,22 @@
     position: relative;
 }
 
-.header__logo {
+.cems-header__logo {
     width: 263px;
     height: 38px;
 }
 
-.header__logo-image {
+.cems-header__logo-image {
     width: 100%;
 }
 
-.button--cart {
+.cems-button--cart {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.button--cart::before {
+.cems-button--cart::before {
     content: '';
     background-image: url(../icons/cart--white.svg);
     width: 24px;
@@ -153,13 +153,13 @@
     background-position: center;
 }
 
-.button--catalog {
+.cems-button--catalog {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.button--catalog::before {
+.cems-button--catalog::before {
     content: '';
     background-image: url(../icons/burger--white.svg);
     width: 24px;
@@ -168,7 +168,7 @@
     background-position: center;
 }
 
-.info {
+.cems-info {
     display: grid;
     grid-template-areas:
         "image title"
@@ -177,7 +177,7 @@
     row-gap: 8px;
 }
 
-.info::before {
+.cems-info::before {
     grid-area: image;
     align-self: center;
     content: '';
@@ -188,47 +188,47 @@
     background-repeat: no-repeat;
 }
 
-.info.info--worktime::before {
+.cems-info.cems-info--worktime::before {
     background-image: url(../icons/clock.svg);
 }
 
-.info.info--email::before {
+.cems-info.cems-info--email::before {
     background-image: url(../icons/mail.svg);
 }
 
-.info.info--phone::before {
+.cems-info.cems-info--phone::before {
     background-image: url(../icons/phone.svg);
 }
 
-.info__title {
+.cems-info__title {
     font-size: 13px;
     color: var(--secondary-400);
 }
 
-.info__title--phone {
+.cems-info__title--phone {
     font-size: 16px;
     color: var(--secondary-700);
 }
 
-.info__title--phone:hover {
+.cems-info__title--phone:hover {
     color: var(--primary-500);
 }
 
-a.info__subtitle,
-.info__subtitle {
+a.cems-info__subtitle,
+.cems-info__subtitle {
     font-size: 14px;
     color: var(--secondary-700);
 }
 
-a.info__subtitle:hover {
+a.cems-info__subtitle:hover {
     color: var(--primary-500);
 }
 
-.info__link--callback {
+.cems-info__link--callback {
     color: var(--primary-500);
 }
 
-.info__link--callback:hover {
+.cems-info__link--callback:hover {
     text-decoration: underline;
     color: var(--primary-700);
 }

@@ -1,78 +1,86 @@
-<div class="product">
-  <div class="product__top">
-    <div class="product__top-wrapper">
-      <h1 class="product__top-title" hidden--on-desktop>
+<div class="cems-product">
+  <div class="cems-product__top">
+    <div class="cems-product__top-wrapper">
+      <h1 class="cems-product__top-title" hidden--on-desktop>
         Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)
       </h1>
 
-      <div class="product__slider"><%- include('../components/slider') %></div>
+      <div class="cems-product__slider">
+        <%- include('../components/slider') %>
+      </div>
     </div>
 
-    <div class="panel product__info" hidden--on-mobile>
-      <h1 class="product__title">
+    <div class="cems-panel cems-product__info" hidden--on-mobile>
+      <h1 class="cems-product__title">
         Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)
       </h1>
-      <div class="product__specifications">
-        <h3 class="product__specifications-title">Характеристики товара</h3>
+      <div class="cems-product__specifications">
+        <h3 class="cems-product__specifications-title">
+          Характеристики товара
+        </h3>
 
-        <div class="product__specification">
-          <span class="product__specification-title">Производитель</span>
-          <span class="product__specification-subtitle">Академия смеси</span>
+        <div class="cems-product__specification">
+          <span class="cems-product__specification-title">Производитель</span>
+          <span class="cems-product__specification-subtitle"
+            >Академия смеси</span
+          >
         </div>
-        <div class="product__specification">
-          <span class="product__specification-title">Вес</span>
-          <span class="product__specification-subtitle">50 кг</span>
+        <div class="cems-product__specification">
+          <span class="cems-product__specification-title">Вес</span>
+          <span class="cems-product__specification-subtitle">50 кг</span>
         </div>
-        <div class="product__specification">
-          <span class="product__specification-title">Тип сухой смеси</span>
-          <span class="product__specification-subtitle"
+        <div class="cems-product__specification">
+          <span class="cems-product__specification-title">Тип сухой смеси</span>
+          <span class="cems-product__specification-subtitle"
             >Морозостойкая смесь монтажно-кладочная</span
           >
         </div>
-        <div class="product__specification">
-          <span class="product__specification-title"
+        <div class="cems-product__specification">
+          <span class="cems-product__specification-title"
             >Расход при толщине слоя 10 мм</span
           >
-          <span class="product__specification-subtitle">18 - 20</span>
+          <span class="cems-product__specification-subtitle">18 - 20</span>
         </div>
-        <div class="product__specification">
-          <span class="product__specification-title"
+        <div class="cems-product__specification">
+          <span class="cems-product__specification-title"
             >Наибольшая крупность заполнителя, не более мм</span
           >
-          <span class="product__specification-subtitle">2,5</span>
+          <span class="cems-product__specification-subtitle">2,5</span>
         </div>
-        <div class="product__specification">
-          <span class="product__specification-title"
+        <div class="cems-product__specification">
+          <span class="cems-product__specification-title"
             >Количество воды затворения (на мешок 50 кг), л</span
           >
-          <span class="product__specification-subtitle">6,5 - 8,0</span>
+          <span class="cems-product__specification-subtitle">6,5 - 8,0</span>
         </div>
       </div>
     </div>
 
-    <div class="product__wrapper">
-      <div class="panel product__to-card">
-        <div class="product__purchase">
-          <div class="product__price">
-            <span class="product__price-summa">300,00</span
-            ><sup class="product__asterix">*</sup>
+    <div class="cems-product__wrapper">
+      <div class="cems-panel cems-product__to-card">
+        <div class="cems-product__purchase">
+          <div class="cems-product__price">
+            <span class="cems-product__price-summa">300,00</span
+            ><sup class="cems-product__asterix">*</sup>
           </div>
-          <div class="in-stock">В наличии</div>
+          <div class="cems-in-stock">В наличии</div>
         </div>
-        <div class="quantity">
-          <button class="quantity__minus">-</button>
-          <input class="quantity__input" type="number" value="0" />
-          <button class="quantity__plus">+</button>
-        </div>
-
-        <div class="product__buttons">
-          <button class="button button--accent">В корзину</button>
-          <button class="button button--second">Купить в один клик</button>
+        <div class="cems-quantity">
+          <button class="cems-quantity__minus">-</button>
+          <input class="cems-quantity__input" type="number" value="0" />
+          <button class="cems-quantity__plus">+</button>
         </div>
 
-        <div class="product__asterix-info">
+        <div class="cems-product__buttons">
+          <button class="cems-button cems-button--accent">В корзину</button>
+          <button class="cems-button cems-button--second">
+            Купить в один клик
+          </button>
+        </div>
+
+        <div class="cems-product__asterix-info">
           <sup>*</sup>- Стоимость без учета
-          <a class="product__delivery-link" href="">доставки</a>
+          <a class="cems-product__delivery-link" href="">доставки</a>
         </div>
       </div>
 
@@ -81,23 +89,23 @@
     </div>
   </div>
 
-  <div class="product__tabs">
-    <div class="panel product__tabs-nav">
+  <div class="cems-product__tabs">
+    <div class="cems-panel cems-product__tabs-nav">
       <button
-        class="product__tabs-button product__tabs-button--active"
+        class="cems-product__tabs-button cems-product__tabs-button--active"
         data-tab="description"
       >
         Описание товара
       </button>
-      <button class="product__tabs-button" data-tab="specifications">
+      <button class="cems-product__tabs-button" data-tab="specifications">
         Характеристики
       </button>
-      <button class="product__tabs-button" data-tab="payment-delivery">
+      <button class="cems-product__tabs-button" data-tab="payment-delivery">
         Оплата и доставка
       </button>
     </div>
-    <div class="panel product__tabs-content">
-      <div class="product__tab product__tab--show" id="description">
+    <div class="cems-panel cems-product__tabs-content">
+      <div class="cems-product__tab cems-product__tab--show" id="description">
         <p>Применяется для выполнения монтажно-кладочных и ремонтных работ.</p>
         <p>
           Представляет собой высокопрочную смесь, состоящую из портландцемента,
@@ -109,81 +117,81 @@
           высокой морозостойкостью, устойчивостью к усадке, технологичностью.
         </p>
       </div>
-      <div class="product__tab" id="specifications">
-        <div class="product__specifications">
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+      <div class="cems-product__tab" id="specifications">
+        <div class="cems-product__specifications">
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
         </div>
 
-        <div class="product__specifications">
-          <div class="product__specification">
-            <span class="product__specification-title"
+        <div class="cems-product__specifications">
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title"
               >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               ad amet cupiditate cumque, molestias dolorum?</span
             >
-            <span class="product__specification-subtitle">50 кг</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title"
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title"
               >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
               pariatur autem, nulla iure dolorum mollitia quod nesciunt neque
               libero ratione.</span
             >
-            <span class="product__specification-subtitle">50 кг</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
-          <div class="product__specification">
-            <span class="product__specification-title">Вес</span>
-            <span class="product__specification-subtitle">50 кг</span>
+          <div class="cems-product__specification">
+            <span class="cems-product__specification-title">Вес</span>
+            <span class="cems-product__specification-subtitle">50 кг</span>
           </div>
         </div>
       </div>
-      <div class="product__tab" id="payment-delivery">
-        <h3 class="product__tab-title">Способы оплаты</h3>
+      <div class="cems-product__tab" id="payment-delivery">
+        <h3 class="cems-product__tab-title">Способы оплаты</h3>
 
-        <div class="product__tab-wrapper">
-          <span class="product__tab-subtitle">Для физических лиц</span>
-          <ul class="product__tab-list">
+        <div class="cems-product__tab-wrapper">
+          <span class="cems-product__tab-subtitle">Для физических лиц</span>
+          <ul class="cems-product__tab-list">
             <li>
               <span>Банковская карта</span>
-              <ul class="cards-list">
+              <ul class="cems-cards-list">
                 <li><img src="../icons/mastercard.svg" alt="" /></li>
                 <li><img src="../icons/visa.svg" alt="" /></li>
                 <li><img src="../icons/mir.svg" alt="" /></li>
@@ -192,9 +200,9 @@
           </ul>
         </div>
 
-        <div class="product__tab-wrapper">
-          <span class="product__tab-subtitle">Для юр. лиц</span>
-          <ul class="product__tab-list">
+        <div class="cems-product__tab-wrapper">
+          <span class="cems-product__tab-subtitle">Для юр. лиц</span>
+          <ul class="cems-product__tab-list">
             <li>Оплата по реквизитам</li>
             <li>
               Оставляете заявку на сайте, с Вами свяжется наш менеджер, уточнит
@@ -209,14 +217,14 @@
           </ul>
         </div>
 
-        <h3 class="product__tab-title">Доставка</h3>
-        <div class="product__tab-map">
-          <iframe
+        <h3 class="cems-product__tab-title">Доставка</h3>
+        <div class="cems-product__tab-map">
+          <!-- <iframe
             src="https://yandex.ru/map-widget/v1/?ll=37.622513%2C55.753215&z=10"
             width="100%"
             height="100%"
             frameborder="0"
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
     </div>
