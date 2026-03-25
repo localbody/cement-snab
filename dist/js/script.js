@@ -8,7 +8,7 @@ const onLoad = () => {
   )
 
   const onClickShowCatalogSubmenuItems = (event) => {
-    console.log(event.target, event.currentTarget)
+    // console.log(event.target, event.currentTarget)
     //
     if (event.currentTarget.getAttribute('show'))
       event.currentTarget.removeAttribute('show')
@@ -29,23 +29,23 @@ const onLoad = () => {
   )
 
   const onClickButtonOpenMobileCatalog = (event) => {
-    buttonOpenMobileCatalog.setAttribute('hidden', 'true')
-    buttonCloseMobileCatalog.removeAttribute('hidden')
-    mobileCatalog.removeAttribute('hidden')
+    buttonOpenMobileCatalog?.setAttribute('hidden', 'true')
+    buttonCloseMobileCatalog?.removeAttribute('hidden')
+    mobileCatalog?.removeAttribute('hidden')
   }
 
-  buttonOpenMobileCatalog.addEventListener(
+  buttonOpenMobileCatalog?.addEventListener(
     'click',
     onClickButtonOpenMobileCatalog
   )
 
   const onClickButtonCloseMobileCatalog = () => {
-    buttonCloseMobileCatalog.setAttribute('hidden', true)
-    buttonOpenMobileCatalog.removeAttribute('hidden')
-    mobileCatalog.setAttribute('hidden', true)
+    buttonCloseMobileCatalog?.setAttribute('hidden', true)
+    buttonOpenMobileCatalog?.removeAttribute('hidden')
+    mobileCatalog?.setAttribute('hidden', true)
   }
 
-  buttonCloseMobileCatalog.addEventListener(
+  buttonCloseMobileCatalog?.addEventListener(
     'click',
     onClickButtonCloseMobileCatalog
   )
@@ -56,7 +56,7 @@ const onLoad = () => {
 
   const onClickButtonMobileClose = () => {
     body.classList.remove('body--overflow')
-    document.querySelector('.cems-mobile').setAttribute('hidden', true)
+    document.querySelector('.cems-mobile')?.setAttribute('hidden', true)
   }
 
   buttonMobileClose?.addEventListener('click', onClickButtonMobileClose)
@@ -69,7 +69,7 @@ const onLoad = () => {
 
   const onClickButtonMobileMenu = () => {
     body.classList.add('body--overflow')
-    document.querySelector('.cems-mobile').removeAttribute('hidden')
+    document.querySelector('.cems-mobile')?.removeAttribute('hidden')
   }
 
   buttonMobileMenu?.addEventListener('click', onClickButtonMobileMenu)
@@ -89,11 +89,11 @@ const onLoad = () => {
   const onClickBody = (event) => {
     if (event.target.classList.contains('body--overflow')) {
       if (
-        !document.querySelector('.cems-panel.catalog').getAttribute('hidden')
+        !document.querySelector('.cems-panel.catalog')?.getAttribute('hidden')
       ) {
         document
           .querySelector('.cems-panel.catalog')
-          .setAttribute('hidden', true)
+          ?.setAttribute('hidden', true)
         body.classList.remove('body--overflow')
       }
     }
@@ -121,16 +121,18 @@ const onLoad = () => {
         .querySelector(
           '.cems-product__tabs-button.cems-product__tabs-button--active'
         )
-        .classList.remove('cems-product__tabs-button--active')
+        ?.classList.remove('cems-product__tabs-button--active')
       document
         .querySelector('.cems-product__tab--show')
-        .classList.remove('cems-product__tab--show')
+        ?.classList.remove('cems-product__tab--show')
 
       const tab = tabButton.dataset?.tab
 
-      console.log(tab)
+      // console.log(tab)
 
-      document.querySelector(`#${tab}`).classList.add('cems-product__tab--show')
+      document
+        .querySelector(`#${tab}`)
+        ?.classList.add('cems-product__tab--show')
       tabButton.classList.add('cems-product__tabs-button--active')
     }
   }
@@ -158,8 +160,8 @@ const onLoad = () => {
       input.value = +input.value + 1
     }
 
-    minus.addEventListener('click', onClickMinus)
-    plus.addEventListener('click', onClickPlus)
+    minus?.addEventListener('click', onClickMinus)
+    plus?.addEventListener('click', onClickPlus)
   })
 
   //
@@ -172,7 +174,9 @@ const onLoad = () => {
 
   const onClickButtonCatalog = () => {
     //
-    document.querySelector('.cems-panel.cems-catalog').removeAttribute('hidden')
+    document
+      .querySelector('.cems-panel.cems-catalog')
+      ?.removeAttribute('hidden')
     body.classList.add('cems-body--overflow')
   }
 
@@ -182,7 +186,7 @@ const onLoad = () => {
     //
     document
       .querySelector('.cems-panel.cems-catalog')
-      .setAttribute('hidden', true)
+      ?.setAttribute('hidden', true)
     body.classList.remove('cems-body--overflow')
   }
 

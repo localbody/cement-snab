@@ -32,7 +32,7 @@
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     max-height: calc(100vh - 224px);
-    overflow: scroll;
+    overflow: auto;
 }
 
 .cems-catalog__aside {
@@ -98,7 +98,7 @@
     line-height: 148%;
 
     display: none;
-    overflow: scroll;
+    overflow: auto;
     width: 67%;
     height: 91%;
     max-height: calc(91vh - 200px);
