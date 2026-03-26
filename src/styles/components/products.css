@@ -106,7 +106,8 @@
 }
 
 .cems-products-item__price::after {
-    content: "₽";
+    /* content: "₽"; */
+    content: none;
 }
 
 .cems-products-item__under {

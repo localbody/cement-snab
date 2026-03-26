@@ -1179,6 +1179,7 @@ a.cems-info__subtitle:hover {
     font-size: 24px;
     color: var(--primary-500);
 }
+.breadcrumbs,
 .cems-breadcrumbs {
     display: flex;
     flex-wrap: wrap;
@@ -1186,8 +1187,11 @@ a.cems-info__subtitle:hover {
     gap: 8px;
     font-size: 12px;
     margin-bottom: 24px;
+    color: var(--primary-500);
 }
 
+
+.breadcrumbs a,
 .cems-breadcrumbs__divider,
 .cems-breadcrumbs__link {
     color: var(--primary-500);
@@ -1198,9 +1202,14 @@ a.cems-info__subtitle:hover {
     text-decoration: underline;
 }
 
+.breadcrumb_last,
 .cems-breadcrumbs__current {
     font-weight: 600;
     color: var(--secondary-400);
+}
+
+.breadcrumbs strong {
+    font-weight: 600;
 }
 .cems-button {
     border-width: 1px solid var(--primary-500);
@@ -2070,7 +2079,7 @@ a.cems-info__subtitle:hover {
     height: 100%;
 }
 
-.cems-swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #444;
@@ -2079,7 +2088,7 @@ a.cems-info__subtitle:hover {
     align-items: center;
 }
 
-.cems-swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -2094,7 +2103,7 @@ a.cems-info__subtitle:hover {
 }
 
 
-.cems-swiper-slide {
+.swiper-slide {
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -2120,21 +2129,21 @@ a.cems-info__subtitle:hover {
     padding: 10px 0;
 }
 
-.cems-product__swiper-thumbs .cems-swiper-slide {
+.cems-product__swiper-thumbs .swiper-slide {
     /* width: 25%; */
     height: 74px;
-    /* opacity: 0.cems-4; */
+    /* opacity: 0.4; */
     padding: 12px;
     border-radius: 12px;
     border: 1px solid var(--neutral-200);
 }
 
-.cems-product__swiper-thumbs .cems-swiper-slide-thumb-active {
+.cems-product__swiper-thumbs .swiper-slide-thumb-active {
     /* opacity: 1; */
     border: 1px solid var(--primary-500);
 }
 
-.cems-swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;

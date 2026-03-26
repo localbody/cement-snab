@@ -216,7 +216,6 @@ const onLoad = () => {
     item.addEventListener('click', onClickCatalogMenuItem)
   })
 
-  //
   var thumbs = new Swiper('.cems-product__swiper-thumbs', {
     loop: true,
     spaceBetween: 10,
