@@ -1,0 +1,6 @@
+/* КОСТЫЛЬ */
+
+form.cart {
+    display: grid;
+    gap: 24px;
+}

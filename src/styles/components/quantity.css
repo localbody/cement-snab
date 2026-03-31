@@ -1,3 +1,4 @@
+.quantity,
 .cems-quantity {
     width: 100%;
     height: 44px;
@@ -9,6 +10,7 @@
     border-radius: 8px;
 }
 
+.quantity input[type="number"],
 .cems-quantity__input {
     background-color: var(--neutral-100);
     border: none;
@@ -21,8 +23,11 @@
     color: var(--secondary--600);
 }
 
+.minus,
+.plus,
 .cems-quantity__minus,
 .cems-quantity__plus {
+    border: none;
     touch-action: manipulation;
     padding-inline: 16px;
     /* width: 36px; */
@@ -31,19 +36,24 @@
     color: var(--primary-500);
     font-size: 20px;
     font-weight: 500;
-    transition: .cems-3s all ease;
+    transition: .3s all ease;
 }
 
+
+.minus:hover,
+.plus:hover,
 .cems-quantity__minus:hover,
 .cems-quantity__plus:hover {
     background-color: var(--neutral-500);
 }
 
+.minus,
 .cems-quantity__minus {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
+.plus,
 .cems-quantity__plus {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -65,6 +75,9 @@
     font-weight: 300;
 }
 
+
+.minus,
+.plus,
 .cems-quantity--products .cems-quantity__minus,
 .cems-quantity--products .cems-quantity__plus {
     padding-inline: 12px;

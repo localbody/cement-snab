@@ -2488,14 +2488,51 @@
           </div>
           <div class="cems-in-stock">В наличии</div>
         </div>
-        <div class="cems-quantity">
-          <button class="cems-quantity__minus">-</button>
-          <input class="cems-quantity__input" type="number" value="0" />
-          <button class="cems-quantity__plus">+</button>
-        </div>
 
-        <div class="cems-product__buttons">
-          <button class="cems-button cems-button--accent">В корзину</button>
+        <div class="cems-product__inner">
+          <form
+            class="cart"
+            action="https://dev.cement-snab.ru/product/bionord-pro-plus-meshok-23kg"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="cart__wrapper">
+              <div class="quantity">
+                <input type="button" value="-" class="minus" />
+                <input
+                  type="number"
+                  id="quantity_69c4e6aa72989"
+                  class="input-text qty text"
+                  step="1"
+                  min="1"
+                  max=""
+                  name="quantity"
+                  value="1"
+                  title="Qty"
+                  size="4"
+                  pattern="[0-9]*"
+                  inputmode="numeric"
+                  aria-labelledby="Количество товара BIONORD PRO PLUS мешок 23кг"
+                />
+
+                <input type="button" value="+" class="plus" />
+              </div>
+
+              <p class="cems-cart-total">
+                <span class="cems-cart-total__label">Итого:</span
+                ><span class="cems-cart-total__value">99300 ₽</span>
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              name="add-to-cart"
+              value="8727"
+              class="single_add_to_cart_button button alt"
+            >
+              В корзину
+            </button>
+          </form>
           <button class="cems-button cems-button--second">
             Купить в один клик
           </button>
@@ -2718,10 +2755,14 @@
           >160</span
         >
         <p><span>Вес:</span><span class="cems-color--accent">50кг</span></p>
-        <p><span>Количество:</span><span class="cems-color--accent">1шт</span></p>
+        <p>
+          <span>Количество:</span><span class="cems-color--accent">1шт</span>
+        </p>
       </div>
 
-      <button class="cems-button cems-button--accent cems-products__button-to-cart">
+      <button
+        class="cems-button cems-button--accent cems-products__button-to-cart"
+      >
         В корзину
       </button>
     </div>
@@ -2759,10 +2800,14 @@
           >160</span
         >
         <p><span>Вес:</span><span class="cems-color--accent">50кг</span></p>
-        <p><span>Количество:</span><span class="cems-color--accent">1шт</span></p>
+        <p>
+          <span>Количество:</span><span class="cems-color--accent">1шт</span>
+        </p>
       </div>
 
-      <button class="cems-button cems-button--accent cems-products__button-to-cart">
+      <button
+        class="cems-button cems-button--accent cems-products__button-to-cart"
+      >
         В корзину
       </button>
     </div>
@@ -2799,10 +2844,14 @@
           >160</span
         >
         <p><span>Вес:</span><span class="cems-color--accent">50кг</span></p>
-        <p><span>Количество:</span><span class="cems-color--accent">1шт</span></p>
+        <p>
+          <span>Количество:</span><span class="cems-color--accent">1шт</span>
+        </p>
       </div>
 
-      <button class="cems-button cems-button--accent cems-products__button-to-cart">
+      <button
+        class="cems-button cems-button--accent cems-products__button-to-cart"
+      >
         В корзину
       </button>
     </div>

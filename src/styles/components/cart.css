@@ -1,0 +1,28 @@
+.cart__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart__wrapper .quantity {
+    max-width: 160px;
+}
+
+.cems-cart-total {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.cems-cart-total__label {
+    color: var(--secondary-400);
+    font-weight: 500;
+}
+
+.cems-cart-total__value {
+    color: var(--primary-500);
+    font-weight: 700;
+}

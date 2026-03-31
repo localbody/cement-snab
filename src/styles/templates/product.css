@@ -32,7 +32,10 @@
     gap: 16px;
 }
 
-
+.cems-product__inner {
+    display: grid;
+    gap: 12px;
+}
 
 .cems-product__slider {
     width: 280px;
@@ -99,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 }
 
 .cems-product__price {
@@ -113,7 +116,7 @@
 }
 
 .cems-product__price-summa::after {
-    content: "₽";
+    /* content: "₽"; */
 }
 
 .cems-product__asterix {

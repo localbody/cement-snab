@@ -513,6 +513,12 @@ template {
 }
 
 
+/* КОСТЫЛЬ */
+
+form.cart {
+    display: grid;
+    gap: 24px;
+}
 :root {
   --font-size: 16px;
   --desktop-width: 1200px;
@@ -1057,7 +1063,10 @@ a.cems-info__subtitle:hover {
     gap: 16px;
 }
 
-
+.cems-product__inner {
+    display: grid;
+    gap: 12px;
+}
 
 .cems-product__slider {
     width: 280px;
@@ -1124,7 +1133,7 @@ a.cems-info__subtitle:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 }
 
 .cems-product__price {
@@ -1211,6 +1220,7 @@ a.cems-info__subtitle:hover {
 .breadcrumbs strong {
     font-weight: 600;
 }
+.single_add_to_cart_button,
 .cems-button {
     border-width: 1px solid var(--primary-500);
     border-radius: 12px;
@@ -1218,12 +1228,15 @@ a.cems-info__subtitle:hover {
     font-size: 14px;
 }
 
+
+.single_add_to_cart_button,
 .cems-button--accent {
     background-color: var(--primary-500);
     color: white;
-    transition: .cems-3s all ease;
+    transition: .3s all ease;
 }
 
+.single_add_to_cart_button:hover,
 .cems-button--accent:hover {
     background-color: var(--primary-700);
 }
@@ -1232,7 +1245,7 @@ a.cems-info__subtitle:hover {
     background-color: transparent;
     color: var(--primary-500);
     border: 1px solid var(--primary-500);
-    transition: .cems-3s all ease;
+    transition: .3s all ease;
 }
 
 .cems-button--second:hover {
@@ -1262,7 +1275,7 @@ a.cems-info__subtitle:hover {
     border-radius: 12px;
     color: var(--secondary-600);
     font-size: 14px;
-    transition: .cems-3s all ease;
+    transition: .3s all ease;
 }
 
 .cems-callback__input::placeholder {
@@ -1313,6 +1326,34 @@ a.cems-info__subtitle:hover {
 
 .cems-callback__link--whatsapp::before {
     background-image: url(../icons/whatsapp--color.svg);
+}
+.cart__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart__wrapper .quantity {
+    max-width: 160px;
+}
+
+.cems-cart-total {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.cems-cart-total__label {
+    color: var(--secondary-400);
+    font-weight: 500;
+}
+
+.cems-cart-total__value {
+    color: var(--primary-500);
+    font-weight: 700;
 }
 .cems-catalog {
     position: absolute;
@@ -1971,7 +2012,8 @@ a.cems-info__subtitle:hover {
 }
 
 .cems-products-item__price::after {
-    content: "₽";
+    /* content: "₽"; */
+    content: none;
 }
 
 .cems-products-item__under {
@@ -2002,6 +2044,7 @@ a.cems-info__subtitle:hover {
     font-size: 14px;
     justify-self: flex-start;
 }
+.quantity,
 .cems-quantity {
     width: 100%;
     height: 44px;
@@ -2013,6 +2056,7 @@ a.cems-info__subtitle:hover {
     border-radius: 8px;
 }
 
+.quantity input[type="number"],
 .cems-quantity__input {
     background-color: var(--neutral-100);
     border: none;
@@ -2025,8 +2069,11 @@ a.cems-info__subtitle:hover {
     color: var(--secondary--600);
 }
 
+.minus,
+.plus,
 .cems-quantity__minus,
 .cems-quantity__plus {
+    border: none;
     touch-action: manipulation;
     padding-inline: 16px;
     /* width: 36px; */
@@ -2035,19 +2082,24 @@ a.cems-info__subtitle:hover {
     color: var(--primary-500);
     font-size: 20px;
     font-weight: 500;
-    transition: .cems-3s all ease;
+    transition: .3s all ease;
 }
 
+
+.minus:hover,
+.plus:hover,
 .cems-quantity__minus:hover,
 .cems-quantity__plus:hover {
     background-color: var(--neutral-500);
 }
 
+.minus,
 .cems-quantity__minus {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
+.plus,
 .cems-quantity__plus {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -2069,6 +2121,9 @@ a.cems-info__subtitle:hover {
     font-weight: 300;
 }
 
+
+.minus,
+.plus,
 .cems-quantity--products .cems-quantity__minus,
 .cems-quantity--products .cems-quantity__plus {
     padding-inline: 12px;

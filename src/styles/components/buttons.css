@@ -1,3 +1,4 @@
+.single_add_to_cart_button,
 .cems-button {
     border-width: 1px solid var(--primary-500);
     border-radius: 12px;
@@ -5,12 +6,15 @@
     font-size: 14px;
 }
 
+
+.single_add_to_cart_button,
 .cems-button--accent {
     background-color: var(--primary-500);
     color: white;
-    transition: .cems-3s all ease;
+    transition: .3s all ease;
 }
 
+.single_add_to_cart_button:hover,
 .cems-button--accent:hover {
     background-color: var(--primary-700);
 }
@@ -19,7 +23,7 @@
     background-color: transparent;
     color: var(--primary-500);
     border: 1px solid var(--primary-500);
-    transition: .cems-3s all ease;
+    transition: .3s all ease;
 }
 
 .cems-button--second:hover {
