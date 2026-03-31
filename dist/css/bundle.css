@@ -1147,7 +1147,7 @@ a.cems-info__subtitle:hover {
 }
 
 .cems-product__price-summa::after {
-    content: "₽";
+    /* content: "₽"; */
 }
 
 .cems-product__asterix {
