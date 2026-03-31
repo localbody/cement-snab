@@ -1,5 +1,5 @@
 .single_add_to_cart_button,
-.cems-button {
+.button {
     border-width: 1px solid var(--primary-500);
     border-radius: 12px;
     padding: 12px 24px;
@@ -8,25 +8,25 @@
 
 
 .single_add_to_cart_button,
-.cems-button--accent {
+.button--accent {
     background-color: var(--primary-500);
     color: white;
     transition: .3s all ease;
 }
 
 .single_add_to_cart_button:hover,
-.cems-button--accent:hover {
+.button--accent:hover {
     background-color: var(--primary-700);
 }
 
-.cems-button--second {
+.button--second {
     background-color: transparent;
     color: var(--primary-500);
     border: 1px solid var(--primary-500);
     transition: .3s all ease;
 }
 
-.cems-button--second:hover {
+.button--second:hover {
     background-color: var(--primary-500);
     color: white;
 }

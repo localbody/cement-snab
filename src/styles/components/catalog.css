@@ -1,4 +1,4 @@
-.cems-catalog {
+.catalog {
     position: absolute;
     z-index: 100;
     width: 100%;
@@ -13,7 +13,7 @@
 
 }
 
-.cems-catalog__button-close {
+.catalog__button-close {
     position: absolute;
     right: 16px;
     top: 16px;
@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
 }
 
-.cems-catalog__sidebar {
+.catalog__sidebar {
     width: 360px;
     background-color: white;
     border: 1px solid var(--neutral-200);
@@ -35,7 +35,7 @@
     overflow: auto;
 }
 
-.cems-catalog__aside {
+.catalog__aside {
     background-color: white;
     width: 100%;
     border-top-right-radius: 12px;
@@ -43,14 +43,14 @@
     border: 1px solid var(--neutral-200);
 }
 
-.cems-catalog__menu-items {
+.catalog__menu-items {
     flex-shrink: 0;
     /* overflow: scroll; */
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
-.cems-catalog__menu-item {
+.catalog__menu-item {
     cursor: pointer;
     color: var(--primary-900);
     font-size: 14px;
@@ -62,11 +62,11 @@
     padding: 16px 8px 16px 16px;
 }
 
-.cems-catalog__menu-item:not(:last-child) {
+.catalog__menu-item:not(:last-child) {
     border-bottom: 1px solid var(--neutral-200);
 }
 
-.cems-catalog__menu-item::after {
+.catalog__menu-item::after {
     content: '';
     width: 16px;
     height: 16px;
@@ -76,19 +76,19 @@
     background-size: contain;
 }
 
-.cems-catalog__menu-item--active,
-.cems-catalog__menu-item:hover {
+.catalog__menu-item--active,
+.catalog__menu-item:hover {
     padding-left: 14px;
     border-left: 2px solid var(--primary-500);
 }
 
-.cems-catalog__menu-item--active>span,
-.cems-catalog__menu-item:hover>span {
+.catalog__menu-item--active>span,
+.catalog__menu-item:hover>span {
     color: var(--primary-500);
 }
 
 
-.cems-catalog__submenu {
+.catalog__submenu {
     position: absolute;
     top: 32px;
     left: 320px;
@@ -104,24 +104,24 @@
     max-height: calc(91vh - 200px);
 }
 
-.cems-catalog__menu-item--active .cems-catalog__submenu {
+.catalog__menu-item--active .catalog__submenu {
     display: flex;
 }
 
-.cems-catalog__submenu-items {
+.catalog__submenu-items {
     display: flex;
     flex-direction: column;
     gap: 12px;
     /* max-width: 20%; */
 }
 
-.cems-catalog__submenu-item:first-child .cems-catalog__submenu-link {
+.catalog__submenu-item:first-child .catalog__submenu-link {
     color: var(--secondary-600);
     font-weight: 600;
     margin-bottom: 8px;
 }
 
-.cems-catalog__submenu-link {
+.catalog__submenu-link {
     color: var(--secondary-400);
     font-weight: 400;
 }

@@ -1,10 +1,10 @@
-.cems-product__tabs {
+.product__tabs {
     width: 100%;
     display: grid;
     gap: 8px;
 }
 
-.cems-product__tabs-nav {
+.product__tabs-nav {
     padding: 4px;
     display: flex;
     gap: 32px;
@@ -13,18 +13,18 @@
 }
 
 @media (max-width: 1199px) {
-    .cems-product__tabs-nav {
+    .product__tabs-nav {
         gap: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    .cems-product__tabs-nav {
+    .product__tabs-nav {
         gap: 8px;
     }
 }
 
-.cems-product__tabs-button {
+.product__tabs-button {
     padding: 16px 32px;
     width: 100%;
     font-size: 16px;
@@ -33,68 +33,68 @@
     color: var(--secondary-600);
 }
 
-.cems-product__tabs-button:hover {
+.product__tabs-button:hover {
     background-color: var(--neutral-600);
 }
 
 @media (max-width: 1199px) {
-    .cems-product__tabs-button {
+    .product__tabs-button {
         padding: 8px 12px;
         font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
-    .cems-product__tabs-button {
+    .product__tabs-button {
         padding: 8px;
         font-size: 11px;
     }
 }
 
 
-.cems-product__tabs-button--active {
+.product__tabs-button--active {
     background-color: var(--neutral-500);
     color: var(--primary-500);
 }
 
-.cems-product__tabs-content {
+.product__tabs-content {
     padding: 24px;
 }
 
-.cems-product__tab {
+.product__tab {
     display: none;
 }
 
 
-.cems-product__tab--show#description {
+.product__tab--show#description {
     display: grid;
     gap: 24px;
 }
 
-.cems-product__tabs-content p {
+.product__tabs-content p {
     font-size: 14px;
     color: var(--secondary-400);
     line-height: 148%;
 }
 
-.cems-product__tab--show#specifications {
+.product__tab--show#specifications {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 12px;
 }
 
 @media (max-width: 1199px) {
-    .cems-product__tab--show#specifications {
+    .product__tab--show#specifications {
         grid-template-columns: 1fr;
         row-gap: 43px;
     }
 }
 
-.cems-product__specifications {
+.product__specifications {
     display: grid;
 }
 
-.cems-product__specifications-title {
+.product__specifications-title {
     /* width: 70%; */
     font-size: 16px;
     font-weight: 400;
@@ -102,7 +102,7 @@
     margin-bottom: 20px;
 }
 
-.cems-product__specification {
+.product__specification {
     display: flex;
     gap: 16px;
     padding: 12px;
@@ -112,12 +112,12 @@
     min-height: 43px;
 }
 
-.cems-product__specification:nth-child(odd) {
+.product__specification:nth-child(odd) {
     background-color: var(--neutral-100);
 }
 
 
-.cems-product__specification-title {
+.product__specification-title {
     /* width: 70%; */
     font-size: 14px;
     font-weight: 400;
@@ -125,72 +125,72 @@
 }
 
 
-.cems-product__specification-subtitle {
+.product__specification-subtitle {
     font-size: 14px;
     line-height: 148%;
     color: var(--primary-500);
 }
 
-.cems-product__tab--show#cems-payment-delivery {
+.product__tab--show#payment-delivery {
     display: grid;
     gap: 16px;
 }
 
-.cems-product__tab-title {
+.product__tab-title {
     line-height: 148%;
     font-size: 20px;
     font-weight: 500;
     color: var(--secondary-600);
 }
 
-.cems-product__tab-wrapper {
+.product__tab-wrapper {
     display: grid;
     gap: 16px;
 }
 
-.cems-product__tab-subtitle {
+.product__tab-subtitle {
     font-size: 14px;
     color: var(--secondary-600);
 }
 
-.cems-product__tab-list {
+.product__tab-list {
     margin-left: 24px;
     color: var(--secondary-400);
     font-size: 14px;
     line-height: 148%;
 }
 
-.cems-product__tab-list li {
+.product__tab-list li {
     list-style: disc;
 }
 
-.cems-product__tab-list .cems-cards-list li {
+.product__tab-list .cards-list li {
     list-style: none;
 }
 
-.cems-cards-list {
+.cards-list {
     margin-top: 16px;
     display: flex;
     gap: 8px;
 }
 
-.cems-cards-list li {
+.cards-list li {
     width: 48px;
     height: 30px;
 }
 
-.cems-cards-list li img {
+.cards-list li img {
     width: 100%;
     height: 100%;
 }
 
-.cems-product__tab-map {
+.product__tab-map {
     width: 100%;
     height: 450px;
     border-radius: 16px;
     overflow: hidden;
 }
 
-.cems-product__tab-map img {
+.product__tab-map img {
     width: 100%
 }

@@ -1,5 +1,5 @@
 .breadcrumbs,
-.cems-breadcrumbs {
+.breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -11,18 +11,18 @@
 
 
 .breadcrumbs a,
-.cems-breadcrumbs__divider,
-.cems-breadcrumbs__link {
+.breadcrumbs__divider,
+.breadcrumbs__link {
     color: var(--primary-500);
 }
 
-.cems-breadcrumbs__link:hover {
+.breadcrumbs__link:hover {
     color: var(--primary-700);
     text-decoration: underline;
 }
 
 .breadcrumb_last,
-.cems-breadcrumbs__current {
+.breadcrumbs__current {
     font-weight: 600;
     color: var(--secondary-400);
 }

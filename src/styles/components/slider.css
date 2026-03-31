@@ -34,12 +34,12 @@
 
 }
 
-.cems-product__swiper {
+.product__swiper {
     height: 80%;
     width: 100%;
 }
 
-.cems-product__swiper .cems-swiper-slide {
+.product__swiper .swiper-slide {
     background-color: white;
 
     padding: 16px;
@@ -47,13 +47,13 @@
     border: 1px solid var(--neutral-200);
 }
 
-.cems-product__swiper-thumbs {
+.product__swiper-thumbs {
     height: 98px;
     box-sizing: border-box;
     padding: 10px 0;
 }
 
-.cems-product__swiper-thumbs .swiper-slide {
+.product__swiper-thumbs .swiper-slide {
     /* width: 25%; */
     height: 74px;
     /* opacity: 0.4; */
@@ -62,7 +62,7 @@
     border: 1px solid var(--neutral-200);
 }
 
-.cems-product__swiper-thumbs .swiper-slide-thumb-active {
+.product__swiper-thumbs .swiper-slide-thumb-active {
     /* opacity: 1; */
     border: 1px solid var(--primary-500);
 }
@@ -74,8 +74,8 @@
     object-fit: contain;
 }
 
-.cems-product__swiper-button-next,
-.cems-product__swiper-button-prev {
+.product__swiper-button-next,
+.product__swiper-button-prev {
     width: 40px;
     height: 40px;
 
@@ -89,11 +89,11 @@
     z-index: 1;
 }
 
-.cems-product__swiper-button-prev {
+.product__swiper-button-prev {
     left: 8px;
     transform: rotate(180deg);
 }
 
-.cems-product__swiper-button-next {
+.product__swiper-button-next {
     right: 8px;
 }

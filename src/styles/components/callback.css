@@ -1,20 +1,20 @@
-.cems-callback {
+.callback {
     padding: 24px;
     display: grid;
     gap: 24px;
 }
 
-.cems-callback__title {
+.callback__title {
     font-size: 20px;
     color: var(--secondary-600);
 }
 
-.cems-callback__inputs {
+.callback__inputs {
     display: grid;
     gap: 12px;
 }
 
-.cems-callback__input {
+.callback__input {
     padding: 12px 16px;
     background-color: var(--neutral-100);
     border: 1px solid var(--neutral-200);
@@ -24,21 +24,21 @@
     transition: .3s all ease;
 }
 
-.cems-callback__input::placeholder {
+.callback__input::placeholder {
     color: var(--secondary-400);
 }
 
-.cems-callback__input:focus {
+.callback__input:focus {
     border: 1px solid var(--primary-500);
 }
 
-.cems-callback__links {
+.callback__links {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.cems-callback__link {
+.callback__link {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -46,12 +46,12 @@
     font-size: 12px;
 }
 
-.cems-callback__link:hover {
+.callback__link:hover {
     color: var(--secondary-500);
     text-decoration: underline;
 }
 
-.cems-callback__link::before {
+.callback__link::before {
     content: '';
     width: 24px;
     height: 24px;
@@ -60,16 +60,16 @@
     background-position: center;
 }
 
-.cems-callback__link--max:hover,
-.cems-callback__link--whatsapp:hover {
+.callback__link--max:hover,
+.callback__link--whatsapp:hover {
     color: var(--secondary-400);
     text-decoration: none;
 }
 
-.cems-callback__link--max::before {
+.callback__link--max::before {
     background-image: url(../icons/max--color.svg);
 }
 
-.cems-callback__link--whatsapp::before {
+.callback__link--whatsapp::before {
     background-image: url(../icons/whatsapp--color.svg);
 }
