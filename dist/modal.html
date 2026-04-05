@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Модальное окно на jQuery UI</title>
+    <!-- Стили jQuery UI -->
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <!-- Библиотеки -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script>
+      $(function () {
+        // Настройка модального окна
+        $('#myModal').dialog({
+          autoOpen: false, // Не открывать автоматически
+          modal: true, // Модальный режим (блокировка страницы)
+          width: 450,
+          buttons: {
+            ОК: function () {
+              $(this).dialog('close')
+              alert('Вы нажали ОК')
+            },
+            Отмена: function () {
+              $(this).dialog('close')
+            },
+          },
+        })
+
+        // По клику на кнопку открываем окно
+        $('#openBtn').click(function () {
+          $('#myModal').dialog('open')
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <button id="openBtn">Открыть модальное окно</button>
+
+    <!-- Контейнер модального окна -->
+    <div id="myModal" title="Приветствие">
+      <p>
+        Это модальное окно. Внутри можно размещать любые элементы: формы, текст,
+        картинки.
+      </p>
+      <label>Ваше имя: <input type="text" id="userName" /></label>
+    </div>
+  </body>
+</html>

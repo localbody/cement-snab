@@ -138,13 +138,15 @@ const onLoad = () => {
     const plus = quantity.querySelector('.quantity__plus')
     const input = quantity.querySelector('.quantity__input')
 
-    const onClickMinus = () => {
+    const onClickMinus = (event) => {
+      event.preventDefault()
       if (input?.value > 0) {
         input.value = +input.value - 1
       }
     }
 
-    const onClickPlus = () => {
+    const onClickPlus = (event) => {
+      event.preventDefault()
       input.value = +input.value + 1
     }
 

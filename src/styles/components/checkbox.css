@@ -1,0 +1,30 @@
+.checkbox {}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+    display: flex;
+    /* align-items: center; */
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid var(--primary-500);
+    flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-color: var(--primary-500);
+    background-image: url(../icons/check--white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
