@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/bundle.css" />
   </head>
 
-  <body class="">
+  <body class="modal-open">
     <div class="container">
       <!-- header -->
       <%- include('../templates/header') %>
@@ -23,75 +23,13 @@
       <%- include('../templates/footer') %>
     </div>
 
-    <div
-      class="modal fade"
-      id="myModal1"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <%-include('../components/popup-search')%>
-      </div>
-    </div>
+    <%-include('../components/popup-search')%>
+    <%-include('../components/popup-callback')%>
+    <%-include('../components/popup-one-click')%>
+    <%-include('../components/popup-order-ok')%>
+    <%-include('../components/popup-order-error')%>
 
-    <div
-      class="modal fade"
-      id="myModal2"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <%-include('../components/popup-callback')%>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="myModal3"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <%-include('../components/popup-one-click')%>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="myModal4"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <%-include('../components/popup-order-ok')%>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="myModal5"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <%-include('../components/popup-order-error')%>
-      </div>
-    </div>
+    <div class="modal-backdrop fade in"></div>
 
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
