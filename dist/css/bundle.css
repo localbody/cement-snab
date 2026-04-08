@@ -515,9 +515,31 @@ template {
 
 /* КОСТЫЛЬ */
 
-form.cart {
-    display: grid;
-    gap: 24px;
+.product__to-card form.cart {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.product__to-card form.cart .quantity {
+    width: 50%;
+}
+
+.product__to-card form.cart .cart-total {
+    margin: 0 0 0 auto;
+}
+
+.product__to-card form.cart .single_add_to_cart_button {
+    width: 100%;
+}
+:root {
+    --padding-24: 24px;
+}
+
+@media (max-width: 991px) {
+    :root {
+        --padding-24: 16px;
+    }
 }
 :root {
   --font-size: 16px;
@@ -676,7 +698,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .footer {
     margin-top: 48px;
-    padding: 24px;
+    padding: var(--padding-24);
 }
 
 .footer__columns {
@@ -1053,9 +1075,8 @@ a.info__subtitle:hover {
     padding: 16px;
 }
 
-
 .product__info {
-    padding: 24px;
+    padding: var(--padding-24);
 }
 
 .product__wrapper {
@@ -1124,7 +1145,7 @@ a.info__subtitle:hover {
 }
 
 .product__to-card {
-    padding: 24px;
+    padding: var(--padding-24);
     display: grid;
     gap: 24px;
 }
@@ -1253,7 +1274,7 @@ a.info__subtitle:hover {
     color: white;
 }
 .callback {
-    padding: 24px;
+    padding: var(--padding-24);
     display: grid;
     gap: 24px;
 }
@@ -1975,7 +1996,7 @@ textarea:focus,
 
 .popup__top {
     background-color: white;
-    padding: 24px;
+    padding: var(--padding-24);
     display: grid;
     gap: 12px;
     justify-items: center;
@@ -2021,7 +2042,7 @@ textarea:focus,
 
 .popup__content {
     background-color: white;
-    padding: 24px;
+    padding: var(--padding-24);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
@@ -2290,7 +2311,7 @@ textarea:focus,
 }
 
 .product__tabs-content {
-    padding: 24px;
+    padding: var(--padding-24);
 }
 
 .product__tab {
@@ -2427,7 +2448,7 @@ textarea:focus,
     width: 100%
 }
 .products {
-    padding: 24px;
+    padding: var(--padding-24);
     color: var(--secondary-600);
 }
 
@@ -2470,11 +2491,12 @@ textarea:focus,
     .products-item__column-1 {
         grid-template-columns: 1fr;
         row-gap: 16px;
+        justify-items: center;
     }
 }
 
 
-.products-item__column-2 {
+.products-item__column-2 form.cart {
     display: grid;
     align-items: center;
     column-gap: 16px;
@@ -2482,13 +2504,13 @@ textarea:focus,
 }
 
 @media (max-width: 1199px) {
-    .products-item__column-2 {
+    .products-item__column-2 form.cart {
         grid-template-columns: 124px 1fr 117px;
     }
 }
 
 @media (max-width: 599px) {
-    .products-item__column-2 {
+    .products-item__column-2 form.cart {
         grid-template-columns: 1fr;
         row-gap: 16px;
     }

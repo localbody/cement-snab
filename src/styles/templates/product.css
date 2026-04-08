@@ -22,9 +22,8 @@
     padding: 16px;
 }
 
-
 .product__info {
-    padding: 24px;
+    padding: var(--padding-24);
 }
 
 .product__wrapper {
@@ -93,7 +92,7 @@
 }
 
 .product__to-card {
-    padding: 24px;
+    padding: var(--padding-24);
     display: grid;
     gap: 24px;
 }

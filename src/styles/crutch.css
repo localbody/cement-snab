@@ -1,6 +1,19 @@
 /* КОСТЫЛЬ */
 
-form.cart {
-    display: grid;
-    gap: 24px;
+.product__to-card form.cart {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.product__to-card form.cart .quantity {
+    width: 50%;
+}
+
+.product__to-card form.cart .cart-total {
+    margin: 0 0 0 auto;
+}
+
+.product__to-card form.cart .single_add_to_cart_button {
+    width: 100%;
 }

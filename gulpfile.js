@@ -14,6 +14,7 @@ const cssFilesOrder = [
   'src/styles/icons.css',
   'src/styles/common.css',
   'src/styles/crutch.css',
+  'src/styles/vars.css',
   'src/styles/main.css',
   'src/styles/pages/*.css',
   'src/styles/templates/*.css',

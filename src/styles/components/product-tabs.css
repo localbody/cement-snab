@@ -58,7 +58,7 @@
 }
 
 .product__tabs-content {
-    padding: 24px;
+    padding: var(--padding-24);
 }
 
 .product__tab {

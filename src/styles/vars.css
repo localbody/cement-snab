@@ -1,0 +1,9 @@
+:root {
+    --padding-24: 24px;
+}
+
+@media (max-width: 991px) {
+    :root {
+        --padding-24: 16px;
+    }
+}

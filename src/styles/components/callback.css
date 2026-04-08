@@ -1,5 +1,5 @@
 .callback {
-    padding: 24px;
+    padding: var(--padding-24);
     display: grid;
     gap: 24px;
 }
