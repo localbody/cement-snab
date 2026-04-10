@@ -55,6 +55,7 @@
 
 
 /*  */
+.js-price,
 .wpcf7-response-output,
 .screen-reader-response,
 .hidden-fields-container {
@@ -91,11 +92,11 @@
     background-color: var(--neutral-100);
 }
 
-#modal-callback .modal-dialog {
+#myModal .modal-dialog {
     max-width: 380px;
 }
 
-#modal-one-click .modal-dialog {
+#myModal-oneclick .modal-dialog {
     max-width: 608px;
 }
 

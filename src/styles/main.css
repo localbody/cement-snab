@@ -24,7 +24,7 @@ body {
   color: var(--black);
   font-size: var(--font-size);
   background-color: var(--neutral-100);
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 }
 
 body {
