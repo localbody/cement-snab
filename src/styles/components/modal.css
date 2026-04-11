@@ -55,6 +55,7 @@
 
 
 /*  */
+p:has(input[type="hidden"][name="tovar"]),
 .js-price,
 .wpcf7-response-output,
 .screen-reader-response,
@@ -109,7 +110,7 @@
 
 .modal-win {
     display: grid;
-    gap: 32px;
+    gap: 24px;
 }
 
 .modal-name {
@@ -118,10 +119,121 @@
     text-align: center;
 }
 
+#myModal-oneclick .modal-name {
+    font-size: 16px;
+    color: var(--primary-500);
+    font-weight: 400;
+}
+
+.js-title {
+    color: var(--secondary-600);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 148%;
+    text-align: center;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
 .modal-dialog form {
     width: 100%;
     display: grid;
     gap: 16px;
+}
+
+#myModal-oneclick .modal-dialog form {
+    row-gap: 24px;
+}
+
+#myModal-oneclick .modal-dialog form .wrapper1,
+#myModal-oneclick .modal-dialog form .wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.modate-calculated-976,
+#myModal-oneclick .modate p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#myModal-oneclick .wrapper2>.modate {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#myModal-oneclick .wrapper2 .quantity {
+    max-width: 116px;
+}
+
+#myModal-oneclick .wrapper2 .quantity p,
+#myModal-oneclick .wrapper2 .quantity p span {
+    height: 100%;
+}
+
+#myModal-oneclick .wrapper2 .quantity p input {
+    height: 100%;
+}
+
+#myModal-oneclick .wrapper3 {
+    display: flex;
+    column-gap: 36px;
+}
+
+#myModal-oneclick .wrapper3>p {
+    display: flex;
+    gap: 12px;
+}
+
+#myModal-oneclick .wrapper3 p {
+    font-size: 11px;
+    color: var(--secondary-400);
+    line-height: 148%;
+}
+
+#myModal-oneclick .wrapper3>p input[type="checkbox"] {
+    padding-right: 12px;
+}
+
+#myModal-oneclick .wrapper3 p a {
+    color: var(--primary-500);
+    text-decoration: underline;
+}
+
+.modal-dialog form .calculated-976 input[type="text"] {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    text-align: right;
+    color: var(--primary-500);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modate-calculated-976 span {
+    color: var(--secondary-400);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.modal-dialog form .calculated-976 input[type="text"]:focus {
+    border: none;
+}
+
+#myModal-oneclick .modate .calculated-976__wrapper p {
+    display: grid;
+}
+
+.modate p span.subtitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--secondary-600);
+    white-space: nowrap;
 }
 
 .modal-dialog form input[type="text"],
@@ -199,6 +311,7 @@
     color: white;
     font-size: 14px;
     font-weight: 700;
+    line-height: 148%;
     cursor: pointer;
     transition: .3s all ease;
 }

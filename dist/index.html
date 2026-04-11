@@ -2913,7 +2913,7 @@
   role="dialog"
   aria-labelledby="myModalLabel"
   aria-hidden="true"
-  style="display: block; padding-right: 0px"
+  style="display: none; padding-right: 0px"
 >
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -3116,7 +3116,7 @@
   role="dialog"
   aria-labelledby="myModalLabel"
   aria-hidden="true"
-  style="display: none; padding-right: 0px"
+  style="display: block; padding-right: 0px"
 >
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -3124,7 +3124,9 @@
       <div class="modal-body">
         <div class="modal-win">
           <div class="modal-name">Заказ в 1 клик</div>
-          <div class="js-title"></div>
+          <div class="js-title">
+            Монтажно-кладочная смесь М200 «Академия Смеси», 50кг (-15°С)
+          </div>
           <div class="js-price"></div>
 
           <div
@@ -3169,107 +3171,110 @@
                   value=""
                 /><input type="hidden" name="_wpcf7_recaptcha_response" />
               </fieldset>
-              <div class="row">
-                <div class="wrapper">
-                  <div class="req">
-                    <p>
-                      <span class="wpcf7-form-control-wrap" data-name="text-581"
-                        ><input
-                          size="40"
-                          maxlength="400"
-                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                          aria-required="true"
-                          aria-invalid="false"
-                          placeholder="Ваше имя"
-                          value=""
-                          type="text"
-                          name="text-581"
-                      /></span>
-                    </p>
-                  </div>
-                  <div class="">
-                    <p>
-                      <span class="wpcf7-form-control-wrap" data-name="text-581"
-                        ><input
-                          size="40"
-                          maxlength="400"
-                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                          aria-required="true"
-                          aria-invalid="false"
-                          placeholder="Фамилия"
-                          value=""
-                          type="text"
-                          name="text-581"
-                      /></span>
-                    </p>
-                  </div>
-                  <div class="req">
-                    <p>
-                      <span class="wpcf7-form-control-wrap" data-name="tel-201"
-                        ><input
-                          size="40"
-                          maxlength="400"
-                          class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                          aria-required="true"
-                          aria-invalid="false"
-                          placeholder="Введите номер телефона"
-                          value=""
-                          type="tel"
-                          name="tel-201"
-                      /></span>
-                    </p>
-                  </div>
-                  <div class="">
-                    <p>
-                      <span
-                        class="wpcf7-form-control-wrap"
-                        data-name="email-727"
-                        ><input
-                          size="40"
-                          maxlength="400"
-                          class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                          aria-required="true"
-                          aria-invalid="false"
-                          placeholder="Ваш email"
-                          value=""
-                          type="email"
-                          name="email-727"
-                      /></span>
-                    </p>
-                  </div>
+
+              <div class="wrapper1">
+                <div class="req">
+                  <p>
+                    <span class="wpcf7-form-control-wrap" data-name="text-581"
+                      ><input
+                        size="40"
+                        maxlength="400"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Ваше имя"
+                        value=""
+                        type="text"
+                        name="text-581"
+                    /></span>
+                  </p>
                 </div>
-                <div class="wrapper">
-                  <div class="modate">
+                <div class="">
+                  <p>
+                    <span class="wpcf7-form-control-wrap" data-name="text-581"
+                      ><input
+                        size="40"
+                        maxlength="400"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Фамилия"
+                        value=""
+                        type="text"
+                        name="text-581"
+                    /></span>
+                  </p>
+                </div>
+                <div class="req">
+                  <p>
+                    <span class="wpcf7-form-control-wrap" data-name="tel-201"
+                      ><input
+                        size="40"
+                        maxlength="400"
+                        class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Введите номер телефона"
+                        value=""
+                        type="tel"
+                        name="tel-201"
+                    /></span>
+                  </p>
+                </div>
+                <div class="">
+                  <p>
+                    <span class="wpcf7-form-control-wrap" data-name="email-727"
+                      ><input
+                        size="40"
+                        maxlength="400"
+                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Ваш email"
+                        value=""
+                        type="email"
+                        name="email-727"
+                    /></span>
+                  </p>
+                </div>
+              </div>
+              <div class="wrapper2">
+                <div class="modate">
+                  <p><span class="subtitle">Количество товара</span></p>
+                  <div class="quantity">
                     <p>
-                      Введите количество
-                      <span class="wpcf7-form-control-wrap" data-name="numo"
+                      <input type="button" value="-" class="minus" /><span
+                        class="wpcf7-form-control-wrap"
+                        data-name="numo"
                         ><input
                           class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
                           aria-invalid="false"
                           placeholder="0"
                           value=""
                           type="number"
-                          name="numo"
-                      /></span>
+                          name="numo" /></span
+                      ><input type="button" value="+" class="plus" />
                     </p>
                   </div>
-                  <div class="modate" hidden="">
+                </div>
+                <div class="modate" hidden="">
+                  <p>
+                    Стоимость
+                    <span class="wpcf7-form-control-wrap" data-name="action"
+                      ><input
+                        class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
+                        aria-invalid="false"
+                        placeholder="Введите стоимость"
+                        value=""
+                        type="number"
+                        name="action"
+                    /></span>
+                  </p>
+                </div>
+                <div class="modate modate-calculated-976">
+                  <p><span class="subtitle">Сумма</span></p>
+                  <div class="calculated-976__wrapper">
                     <p>
-                      Стоимость
-                      <span class="wpcf7-form-control-wrap" data-name="action"
-                        ><input
-                          class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
-                          aria-invalid="false"
-                          placeholder="Введите стоимость"
-                          value=""
-                          type="number"
-                          name="action"
-                      /></span>
-                    </p>
-                  </div>
-                  <div class="modate">
-                    <p>
-                      Итого
                       <span class="wpcf7-form-control-wrap calculated-976"
                         ><input
                           data-number="0"
@@ -3280,19 +3285,17 @@
                           value="0"
                           type="text"
                           name="calculated-976"
-                          data-formulas="numo * action"
-                      /></span>
+                          data-formulas="numo * action" /></span
+                      ><span>без учёта доставки</span>
                     </p>
                   </div>
                 </div>
-                <p>
-                  <input
-                    type="hidden"
-                    name="tovar"
-                    value=""
-                    autocomplete="off"
-                  />
-                </p>
+              </div>
+              <p>
+                <input type="hidden" name="tovar" value="" autocomplete="off" />
+              </p>
+
+              <div class="wrapper3">
                 <p>
                   <span
                     class="wpcf7-form-control-wrap"
@@ -3305,25 +3308,31 @@
                           value="1"
                           aria-invalid="false" /></span></span
                   ></span>
-                  Я даю разрешение на обработку персональных данных
-                  <a href="/soglasie" target="_blank"
-                    >согласие на обработку персональных данных</a
+                  <span
+                    >Я даю разрешение на обработку персональных данных
+                    <a href="/soglasie" target="_blank"
+                      >согласие на обработку персональных данных</a
+                    ></span
                   >
                 </p>
                 <p>
-                  Ознакомиться с
-                  <a href="/politika-konfidentsialnosti" target="_blank"
-                    >политикой конфиденциальности</a
+                  <span
+                    >Ознакомиться с
+                    <a href="/politika-konfidentsialnosti" target="_blank"
+                      >политикой конфиденциальности</a
+                    ></span
                   >
-                </p>
-                <p>
-                  <input
-                    class="wpcf7-form-control wpcf7-submit has-spinner"
-                    type="submit"
-                    value="Отправить"
-                  />
                 </p>
               </div>
+
+              <p>
+                <input
+                  class="wpcf7-form-control wpcf7-submit has-spinner"
+                  type="submit"
+                  value="Отправить"
+                />
+              </p>
+
               <input
                 type="hidden"
                 name="_pvb_ajax_calc_nonce"
